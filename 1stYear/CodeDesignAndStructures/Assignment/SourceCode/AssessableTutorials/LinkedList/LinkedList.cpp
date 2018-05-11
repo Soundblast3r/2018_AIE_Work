@@ -103,5 +103,14 @@ void LinkedList::Print()
 			EndloopFound = true;
 		}
 	}
+}
 
+int LinkedList::count()
+{
+	int count = 0;
+	for (LinkedListNode *currNode = start; currNode; currNode = currNode->next)
+	{
+		count++;
+	}
+	return count;
 }

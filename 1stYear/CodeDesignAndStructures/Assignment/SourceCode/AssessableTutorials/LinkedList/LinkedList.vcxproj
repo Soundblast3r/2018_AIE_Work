@@ -146,11 +146,13 @@
     <ClCompile Include="BinaryTreeNode.cpp" />
     <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="LinkedListNode.cpp" />
+    <ClCompile Include="linkedlists_tests.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="BinaryTreeNode.h" />
+    <ClInclude Include="catch.hpp" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="LinkedListNode.h" />
   </ItemGroup>

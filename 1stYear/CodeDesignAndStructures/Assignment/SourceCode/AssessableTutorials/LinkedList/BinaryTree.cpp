@@ -75,7 +75,7 @@ void BinaryTree::remove(int value)
 			{
 				if (currNode->Left == nullptr)
 				{
-					
+
 					EndloopFound = true;
 				}
 
@@ -89,7 +89,7 @@ void BinaryTree::remove(int value)
 			{
 				if (currNode->Right == nullptr)
 				{
-					
+
 					EndloopFound = true;
 				}
 				else
@@ -98,6 +98,7 @@ void BinaryTree::remove(int value)
 				}
 			}
 		}
+	}
 	//delete node with one child
 	//delete node with two children
 }

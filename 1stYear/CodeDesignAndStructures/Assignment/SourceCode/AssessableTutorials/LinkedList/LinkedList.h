@@ -16,4 +16,5 @@ public:
 	void popBack();
 
 	void Print();
+	int count();
 };

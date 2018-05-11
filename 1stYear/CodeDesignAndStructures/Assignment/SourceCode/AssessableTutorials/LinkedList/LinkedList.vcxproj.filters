@@ -42,6 +42,9 @@
     <ClCompile Include="BinaryTreeNode.cpp">
       <Filter>Source Files\Binary Tree</Filter>
     </ClCompile>
+    <ClCompile Include="linkedlists_tests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LinkedList.h">
@@ -55,6 +58,9 @@
     </ClInclude>
     <ClInclude Include="BinaryTreeNode.h">
       <Filter>Header Files\BinaryTree</Filter>
+    </ClInclude>
+    <ClInclude Include="catch.hpp">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
