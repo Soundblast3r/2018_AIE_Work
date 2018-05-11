@@ -17,4 +17,5 @@ public:
 
 	void Print();
 	int count();
+	int last();
 };

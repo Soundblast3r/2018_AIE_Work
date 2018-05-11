@@ -20,6 +20,7 @@ LinkedList::~LinkedList()
 
 }
 
+//added to test
 void LinkedList::pushBack(int value)
 {
 	LinkedListNode *NewNode = new LinkedListNode;
@@ -55,6 +56,7 @@ void LinkedList::pushBack(int value)
 	}
 }
 
+//added to test
 void LinkedList::popFront()
 {
 	start = start->next;
@@ -62,6 +64,7 @@ void LinkedList::popFront()
 	start->previous = nullptr;
 }
 
+//added to test
 void LinkedList::popBack()
 {
 		LinkedListNode *currNode;
@@ -84,6 +87,7 @@ void LinkedList::popBack()
 		delete currNode;
 }
 
+//added to test
 void LinkedList::Print()
 {
 	LinkedListNode *currNode;
@@ -105,6 +109,7 @@ void LinkedList::Print()
 	}
 }
 
+//added to test
 int LinkedList::count()
 {
 	int count = 0;
@@ -113,4 +118,25 @@ int LinkedList::count()
 		count++;
 	}
 	return count;
+}
+
+int LinkedList::last()
+{
+	LinkedListNode *currNode;
+	EndloopFound = false;
+	currNode = start;
+	while (EndloopFound == false)
+	{
+		if (currNode->next != nullptr)
+		{
+			currNode = currNode->next;
+			EndloopFound = false;
+		}
+
+		else if (currNode->next == nullptr)
+		{
+			EndloopFound = true;
+		}
+	}
+	return currNode->data;
 }
