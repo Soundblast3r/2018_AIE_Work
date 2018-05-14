@@ -153,6 +153,22 @@ TEST_CASE("popFront() – remove the first element", "[LinkedList]")
 	REQUIRE(demoLinkedList.count() == 5);
 }
 
-//empty() – return a Boolean, true if the list is empty, false otherwise
+TEST_CASE("empty() – return a Boolean, true if the list is empty, false otherwise", "[LinkedList]")
+{
+	std::cout << std::endl;
+	std::cout << "--------------------------------" << std::endl;
+	std::cout << "Empty" << std::endl;
+	std::cout << "--------------------------------" << std::endl;
+	LinkedList demoLinkedList;
+	std::cout << "list is empty" << std::endl;
+	std::cout << demoLinkedList.empty() << std::endl;
+	REQUIRE(demoLinkedList.empty() == true);
+	std::cout << "--------------------------------" << std::endl;
+	demoLinkedList.pushBack(7);
+	std::cout << "list has 1 node" << std::endl;
+	std::cout << demoLinkedList.empty() << std::endl;
+	REQUIRE(demoLinkedList.empty() == false);
+	std::cout << "--------------------------------" << std::endl;
+}
 
 //clear() – remove all elements from the list

@@ -140,3 +140,25 @@ int LinkedList::last()
 	}
 	return currNode->data;
 }
+
+//added to test
+bool LinkedList::empty()
+{
+	return (start == nullptr);
+/*
+	int count = 0;
+	for (LinkedListNode *currNode = start; currNode; currNode = currNode->next)
+	{
+		count++;
+	}
+
+	if (count == 0)
+	{
+		return true;
+	}
+
+	else if (count > 0)
+	{
+		return false;
+	}*/
+}

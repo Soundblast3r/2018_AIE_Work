@@ -18,4 +18,5 @@ public:
 	void Print();
 	int count();
 	int last();
+	bool empty();
 };
