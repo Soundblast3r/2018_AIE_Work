@@ -162,3 +162,16 @@ bool LinkedList::empty()
 		return false;
 	}*/
 }
+
+//void LinkedList::remove(int value)
+//{
+//	{
+//		LinkedListNode *currNode;
+//		EndloopFound = false;
+//		currNode = start;
+//		while (EndloopFound == false)
+//		{
+//			
+//		}
+//	}
+//}

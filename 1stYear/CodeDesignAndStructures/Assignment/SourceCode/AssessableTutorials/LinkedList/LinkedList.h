@@ -19,4 +19,5 @@ public:
 	int count();
 	int last();
 	bool empty();
+	void remove(int value);
 };
