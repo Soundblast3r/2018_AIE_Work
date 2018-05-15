@@ -21,7 +21,11 @@
   <ItemGroup>
     <ClCompile Include="dep\aieutilities\Gizmos.cpp" />
     <ClCompile Include="dep\glcore\gl_core_4_4.c" />
+    <ClCompile Include="src\GraphicsEngine.cpp" />
     <ClCompile Include="src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\GraphicsEngine.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -80,7 +84,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;$(SolutionDir)dep\glfw\lib-vc2017\x64</LibraryPath>
-    <IncludePath>$(SolutionDir)dep\glfw\include;$(SolutionDir)dep\glcore;$(SolutionDir)dep\aieutilities;$(SolutionDir)dep\glm;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>$(SolutionDir)dep\imgui;$(SolutionDir)dep\glfw\include;$(SolutionDir)dep\glcore;$(SolutionDir)dep\aieutilities;$(SolutionDir)dep\glm;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>$(SolutionDir)dep\glfw\include;$(SolutionDir)dep\glcore;$(SolutionDir)dep\aieutilities;$(SolutionDir)dep\glm;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
