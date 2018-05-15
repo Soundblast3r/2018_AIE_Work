@@ -8,7 +8,8 @@
 
 using glm::vec3;
 using glm::vec4;
-using glm::mat4;
+using glm::mat4;
+
 
 int main() 
 {
@@ -42,7 +43,8 @@ int main()
 	
 	aie::Gizmos::create(1000,1000,1000,1000);
 	mat4 view = glm::lookAt(vec3(10, 10, 10), vec3(0), vec3(0, 1, 0));
-	mat4 projection = glm::perspective(glm::pi<float>() * 0.25f, 16 / 9.f, 0.1f, 1000.f);
+	mat4 projection = glm::perspective(glm::pi<float>() * 0.25f, 16 / 9.f, 0.1f, 1000.f);
+
 	while (glfwWindowShouldClose(window) == false && glfwGetKey(window, GLFW_KEY_ESCAPE) != GLFW_PRESS) 
 	{
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);

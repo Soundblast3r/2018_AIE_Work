@@ -164,14 +164,46 @@ bool LinkedList::empty()
 }
 
 //void LinkedList::remove(int value)
-//{
-//	{
-//		LinkedListNode *currNode;
-//		EndloopFound = false;
-//		currNode = start;
-//		while (EndloopFound == false)
-//		{
-//			
-//		}
-//	}
-//}
+void LinkedList::remove(int NodeValue)
+{
+	LinkedListNode* currNode;
+	currNode = start;
+	currNode = currNode->next;
+	LinkedListNode* Nodeholder;
+	EndloopFound = false;
+
+	while (currNode != nullptr)
+	{
+		if (currNode->data == NodeValue) 
+		{
+			std::cout << "Value " << currNode->data << std::endl;
+			break;
+		}
+
+		else 
+		{
+			std::cout << "Value " << currNode->data << " does not match " << NodeValue << ".\n";
+			currNode = currNode->next; 
+		}
+	}
+
+	if (currNode == nullptr) 
+	{ // if we reached end of list
+		std::cout << "Can't remove value: no match found.\n"; // no match, cant remove
+	}
+	else { // found match
+		std::cout << "Deleting: " << currNode << "\n";
+		currNode = currNode->next; // current is updated
+		currNode->previous->previous->next = currNode;
+		Nodeholder = currNode->previous->previous;
+		delete currNode->previous;
+		currNode->previous = Nodeholder;
+		Nodeholder = nullptr;
+	}
+}
+
+//added to test
+void LinkedList::clear()
+{
+	start = nullptr;
+}

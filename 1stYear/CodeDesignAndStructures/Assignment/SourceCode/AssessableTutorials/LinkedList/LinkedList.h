@@ -19,5 +19,6 @@ public:
 	int count();
 	int last();
 	bool empty();
-	//void remove(int value);
+	void remove(int NodeValue);
+	void clear();
 };

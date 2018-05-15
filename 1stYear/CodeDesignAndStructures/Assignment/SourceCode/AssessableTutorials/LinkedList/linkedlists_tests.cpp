@@ -101,8 +101,28 @@ TEST_CASE("count() – return how many elements exist in the list", "[LinkedList]"
 
 //erase(iterator) – remove an element by its iterator
 
-//remove(value) – remove all elements with matching value
-
+TEST_CASE("remove(value) – remove all elements with matching value", "[LinkedList]")
+{
+	std::cout << std::endl;
+	std::cout << "--------------------------------" << std::endl;
+	std::cout << "Remove (remove 3rd node, data: 12)" << std::endl;
+	std::cout << "--------------------------------" << std::endl;
+	LinkedList demoLinkedList;
+	demoLinkedList.pushBack(7);
+	demoLinkedList.pushBack(15);
+	demoLinkedList.pushBack(12);
+	demoLinkedList.pushBack(1);
+	demoLinkedList.pushBack(5);
+	demoLinkedList.pushBack(9);
+	demoLinkedList.Print();
+	REQUIRE(demoLinkedList.count() == 6);
+	std::cout << "--------------------------------" << std::endl;
+	std::cout << "remove 3rd node, data: 12" << std::endl;
+	demoLinkedList.remove(12);
+	demoLinkedList.Print();
+	REQUIRE(demoLinkedList.count() == 5);
+	std::cout << "--------------------------------" << std::endl;
+}
 TEST_CASE("popBack() – remove the last element", "[LinkedList]") 
 {
 	std::cout << std::endl;
@@ -171,4 +191,27 @@ TEST_CASE("empty() – return a Boolean, true if the list is empty, false otherwis
 	std::cout << "--------------------------------" << std::endl;
 }
 
-//clear() – remove all elements from the list
+//
+TEST_CASE("clear() – remove all elements from the list", "[LinkedList]")
+{
+	std::cout << "--------------------------------" << std::endl;
+	std::cout << "clear" << std::endl;
+	std::cout << "--------------------------------" << std::endl;
+	LinkedList demoLinkedList;
+	demoLinkedList.pushBack(7);
+	demoLinkedList.pushBack(15);
+	demoLinkedList.pushBack(12);
+	demoLinkedList.pushBack(1);
+	demoLinkedList.pushBack(5);
+	demoLinkedList.pushBack(9);
+	demoLinkedList.Print();
+	std::cout << "--------------------------------" << std::endl;
+	std::cout << "current count is: '" << demoLinkedList.count() << "' Should be 6" << std::endl;
+	std::cout << "--------------------------------" << std::endl;
+	REQUIRE(demoLinkedList.count() == 6);
+	demoLinkedList.clear();
+	std::cout << "--------------------------------" << std::endl;
+	std::cout << "List is: '" << demoLinkedList.empty() << "' Should be 1 (empty ran. 1 = true, 0 = false)" << std::endl;
+	std::cout << "--------------------------------" << std::endl;
+
+}
