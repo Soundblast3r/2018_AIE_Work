@@ -8,7 +8,7 @@
 //		-create a new LinkedListNode, set its data, and set its next and prev pointers
 //Pop()
 //		-removes a node from the end
-
+int i;
 
 LinkedList::LinkedList()
 {
@@ -223,7 +223,7 @@ void LinkedList::remove(int NodeValue)
 		std::cout << "Can't remove value: no match found.\n"; // no match, cant remove
 	}
 	else { // found match
-		std::cout << "Deleting: " << currNode << "\n";
+		std::cout << "Deleting: " << currNode->data << "\n";
 		currNode = currNode->next; // current is updated
 		currNode->previous->previous->next = currNode;
 		Nodeholder = currNode->previous->previous;
@@ -239,7 +239,37 @@ void LinkedList::clear()
 	start = nullptr;
 }
 
-//void LinkedList::begin()
-//{
+// if empty begin = end;
+// else begin != end
+LinkedList::Iterator LinkedList::begin()
+{
+	return start;
+}
 
-//}
+LinkedList::Iterator LinkedList::end()
+{
+	return nullptr;
+}
+
+void LinkedList::increment(Iterator & iter, int count)
+{
+	for (int i = 0; i < count && iter != nullptr; ++i)
+	{
+		iter = iter->next;
+	}
+}
+
+void LinkedList::insert(Iterator & iter, int value)
+{
+	LinkedListNode *currNode = new LinkedListNode;
+	currNode->data = value;
+	currNode->next = iter->next;
+	iter->next = currNode;
+}
+
+void LinkedList::erase(Iterator & iter)
+{
+	iter->previous->next = iter->next; //iter is now disconnected from the linked list - the node before it points to the node after it
+	iter->next->previous = iter->previous; //now the pointer after iter points back to the previous node too
+}
+

@@ -80,18 +80,98 @@ TEST_CASE("pushFront( value ) – add a new value to the front of the list", "[Lin
 	std::cout << "--------------------------------" << std::endl;
 }
 
-//insert(Iterator, value) – add a new value one - past the specified iterator location
+TEST_CASE("increment", "[LinkedList]")
+{
+	std::cout << std::endl;
+	std::cout << "--------------------------------" << std::endl;
+	std::cout << "Increment" << std::endl;
+	std::cout << "--------------------------------" << std::endl;
+	LinkedList demoLinkedList;
+	demoLinkedList.pushBack(7);
+	demoLinkedList.pushBack(15);
+	demoLinkedList.pushBack(12);
+	demoLinkedList.pushBack(1);
+	demoLinkedList.pushBack(5);
+	demoLinkedList.pushBack(9);
+	demoLinkedList.Print();
 
-//begin() – return an iterator to the first element
+	LinkedList::Iterator it = demoLinkedList.begin();
+	demoLinkedList.increment(it, 3);
+	std::cout << "--------------------------------" << std::endl;
+	std::cout << "demoLinkedList.begin()->next->data = '" << demoLinkedList.begin()->next->data << std::endl;
+	std::cout << "iterated 3 times, it = '" << it->data << "' should == '1'" << std::endl;
+	REQUIRE(it->data == 1);
+	std::cout << "--------------------------------" << std::endl;
+}
 
-//end() – return an iterator to a null element
+TEST_CASE("insert(Iterator, value) – add a new value one - past the specified iterator location", "[LinkedList]")
+{
+	std::cout << std::endl;
+	std::cout << "--------------------------------" << std::endl;
+	std::cout << "insert" << std::endl;
+	std::cout << "--------------------------------" << std::endl;
 
-//first() – return the first element by value, assert if no elements
+	LinkedList demoLinkedList;
+	demoLinkedList.pushBack(7);
+	demoLinkedList.pushBack(15);
+	demoLinkedList.pushBack(12);
+	demoLinkedList.pushBack(1);
+	demoLinkedList.pushBack(5);
+	demoLinkedList.pushBack(9);
+	demoLinkedList.Print();
+
+	std::cout << "--------------------------------" << std::endl;
+	LinkedList::Iterator it = demoLinkedList.begin();
+	demoLinkedList.insert(it, 50);
+	demoLinkedList.Print();
+	REQUIRE(it->data == 7);
+	REQUIRE(it->next->data == 50);
+	REQUIRE(it->next->next->data == 15);
+}
+
+TEST_CASE("begin() – return an iterator to the first element", "[LinkedList]")
+{
+	std::cout << std::endl;
+	std::cout << "--------------------------------" << std::endl;
+	std::cout << "begin" << std::endl;
+	std::cout << "--------------------------------" << std::endl;
+	LinkedList demoLinkedList;
+	demoLinkedList.pushBack(7);
+	demoLinkedList.pushBack(15);
+	demoLinkedList.pushBack(12);
+	demoLinkedList.pushBack(1);
+	demoLinkedList.pushBack(5);
+	demoLinkedList.pushBack(9);
+	demoLinkedList.Print();
+	std::cout << "begin is: '" << demoLinkedList.begin() << "' Should be start" << std::endl;
+	std::cout << "start is: '" << demoLinkedList.start << "'" << std::endl;
+	REQUIRE(demoLinkedList.begin() == demoLinkedList.start);
+	std::cout << "--------------------------------" << std::endl;
+}
+
+TEST_CASE("end() – return an iterator to a null element", "[LinkedList]")
+{
+	std::cout << std::endl;
+	std::cout << "--------------------------------" << std::endl;
+	std::cout << "end" << std::endl;
+	std::cout << "--------------------------------" << std::endl;
+	LinkedList demoLinkedList;
+	demoLinkedList.pushBack(7);
+	demoLinkedList.pushBack(15);
+	demoLinkedList.pushBack(12);
+	demoLinkedList.pushBack(1);
+	demoLinkedList.pushBack(5);
+	demoLinkedList.pushBack(9);
+	demoLinkedList.Print();
+	std::cout << "end is: '" << demoLinkedList.end() << "' Should be nullptr" << std::endl;
+	REQUIRE(demoLinkedList.end() == nullptr);
+	std::cout << "--------------------------------" << std::endl;
+}
 
 TEST_CASE("first() – return the first element by value, assert if no elements", "[LinkedList]")
 {
-	///*
 	//crash test
+	/*
 	{
 		std::cout << std::endl;
 		std::cout << "--------------------------------" << std::endl;
@@ -100,9 +180,10 @@ TEST_CASE("first() – return the first element by value, assert if no elements", 
 		LinkedList demoLinkedList;
 		std::cout << "first value '" << demoLinkedList.first() << "' should crash" << std::endl;
 	}
-	/*
+	*/
 
 	//standard test
+	///*
 	{
 		std::cout << std::endl;
 		std::cout << "--------------------------------" << std::endl;
@@ -120,7 +201,7 @@ TEST_CASE("first() – return the first element by value, assert if no elements", 
 		REQUIRE(demoLinkedList.first() == 7);
 		std::cout << "--------------------------------" << std::endl;
 	}
-	*/
+	///*/
 }
 
 TEST_CASE("last() – return the last element by value, assert if no elements", "[LinkedList]")
@@ -167,7 +248,30 @@ TEST_CASE("count() – return how many elements exist in the list", "[LinkedList]"
 	std::cout << "--------------------------------" << std::endl;
 }
 
-//erase(iterator) – remove an element by its iterator
+TEST_CASE("erase(iterator) – remove an element by its iterator", "[LinkedList]")
+{
+	std::cout << std::endl;
+	std::cout << "--------------------------------" << std::endl;
+	std::cout << "Remove (remove 5th node, data: 5)" << std::endl;
+	std::cout << "--------------------------------" << std::endl;
+	LinkedList demoLinkedList;
+	demoLinkedList.pushBack(7);
+	demoLinkedList.pushBack(15);
+	demoLinkedList.pushBack(12);
+	demoLinkedList.pushBack(1);
+	demoLinkedList.pushBack(5);
+	demoLinkedList.pushBack(9);
+	demoLinkedList.Print();
+	REQUIRE(demoLinkedList.count() == 6);
+	std::cout << "--------------------------------" << std::endl;
+	std::cout << "remove 5th node, data: 5" << std::endl;
+	LinkedList::Iterator it = demoLinkedList.begin();
+	demoLinkedList.increment(it, 3);
+	demoLinkedList.erase(it);
+	demoLinkedList.Print();
+	REQUIRE(demoLinkedList.count() == 5);
+	std::cout << "--------------------------------" << std::endl;
+}
 
 TEST_CASE("remove(value) – remove all elements with matching value", "[LinkedList]")
 {

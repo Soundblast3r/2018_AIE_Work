@@ -4,6 +4,7 @@
 class LinkedList
 {
 public:
+	using Iterator = LinkedListNode * ;
 	LinkedList();
 	~LinkedList();
 
@@ -23,5 +24,9 @@ public:
 	bool empty();
 	void remove(int NodeValue);
 	void clear();
-	//void begin();
+	Iterator begin();
+	Iterator end();
+	void insert(Iterator& iter, int value);
+	void erase(Iterator& iter);
+	void increment(Iterator& iter, int count);
 };
