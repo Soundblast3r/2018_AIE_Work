@@ -1,6 +1,7 @@
 #include "LinkedList.h"
 #include "math.h"
 #include <iostream>
+#include <cassert>
 
 //start Place pointer
 //push (int data)
@@ -53,6 +54,29 @@ void LinkedList::pushBack(int value)
 		currNode->next = NewNode;
 		NewNode->previous = currNode;
 		NewNode->next = nullptr;
+	}
+}
+
+//added to test
+void LinkedList::pushFront(int value)
+{
+	LinkedListNode *NewNode = new LinkedListNode;
+	NewNode->data = value;
+	if (start == nullptr)
+	{
+		start = NewNode;
+		start->next = nullptr;
+		start->previous = nullptr;
+	}
+
+	else if (start != nullptr)
+	{
+		LinkedListNode* Nodeholder;
+		Nodeholder = start;
+		start = NewNode;
+		start->next = Nodeholder;
+		start->previous = nullptr;
+		Nodeholder = nullptr;
 	}
 }
 
@@ -142,6 +166,13 @@ int LinkedList::last()
 }
 
 //added to test
+int& LinkedList::first()
+{
+	assert(start != nullptr);
+	return start->data;
+}
+
+//added to test
 bool LinkedList::empty()
 {
 	return (start == nullptr);
@@ -207,3 +238,8 @@ void LinkedList::clear()
 {
 	start = nullptr;
 }
+
+//void LinkedList::begin()
+//{
+
+//}

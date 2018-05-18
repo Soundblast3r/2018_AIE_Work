@@ -45,7 +45,40 @@ TEST_CASE("pushBack( value ) – add a new value to the end of the list", "[Linked
 	std::cout << "--------------------------------" << std::endl;
 }
 
-//pushFront( value ) – add a new value to the front of the list
+TEST_CASE("pushFront( value ) – add a new value to the front of the list", "[LinkedList]")
+{
+	std::cout << std::endl;
+	std::cout << "--------------------------------" << std::endl;
+	std::cout << "pushfront" << std::endl;
+	std::cout << "--------------------------------" << std::endl;
+
+	LinkedList demoLinkedList;
+	demoLinkedList.pushFront(7);
+	std::cout << "added node with data: 7" << std::endl;
+	demoLinkedList.Print();
+	std::cout << "--------------------------------" << std::endl;
+	demoLinkedList.pushFront(15);
+	std::cout << "added node with data: 15" << std::endl;
+	demoLinkedList.Print();
+	std::cout << "--------------------------------" << std::endl;
+	demoLinkedList.pushFront(12);
+	std::cout << "added node with data: 12" << std::endl;
+	demoLinkedList.Print();
+	std::cout << "--------------------------------" << std::endl;
+	demoLinkedList.pushFront(1);
+	std::cout << "added node with data: 1" << std::endl;
+	demoLinkedList.Print();
+	std::cout << "--------------------------------" << std::endl;
+	demoLinkedList.pushFront(5);
+	std::cout << "added node with data: 5" << std::endl;
+	demoLinkedList.Print();
+	std::cout << "--------------------------------" << std::endl;
+	demoLinkedList.pushFront(9);
+	std::cout << "added node with data: 9" << std::endl;
+	demoLinkedList.Print();
+	REQUIRE(demoLinkedList.count() == 6);
+	std::cout << "--------------------------------" << std::endl;
+}
 
 //insert(Iterator, value) – add a new value one - past the specified iterator location
 
@@ -54,6 +87,41 @@ TEST_CASE("pushBack( value ) – add a new value to the end of the list", "[Linked
 //end() – return an iterator to a null element
 
 //first() – return the first element by value, assert if no elements
+
+TEST_CASE("first() – return the first element by value, assert if no elements", "[LinkedList]")
+{
+	///*
+	//crash test
+	{
+		std::cout << std::endl;
+		std::cout << "--------------------------------" << std::endl;
+		std::cout << "first" << std::endl;
+		std::cout << "--------------------------------" << std::endl;
+		LinkedList demoLinkedList;
+		std::cout << "first value '" << demoLinkedList.first() << "' should crash" << std::endl;
+	}
+	/*
+
+	//standard test
+	{
+		std::cout << std::endl;
+		std::cout << "--------------------------------" << std::endl;
+		std::cout << "first" << std::endl;
+		std::cout << "--------------------------------" << std::endl;
+		LinkedList demoLinkedList;
+		demoLinkedList.pushBack(7);
+		demoLinkedList.pushBack(15);
+		demoLinkedList.pushBack(12);
+		demoLinkedList.pushBack(1);
+		demoLinkedList.pushBack(5);
+		demoLinkedList.pushBack(9);
+		demoLinkedList.Print();
+		std::cout << "first value '" << demoLinkedList.first() << "' Should be 7" << std::endl;
+		REQUIRE(demoLinkedList.first() == 7);
+		std::cout << "--------------------------------" << std::endl;
+	}
+	*/
+}
 
 TEST_CASE("last() – return the last element by value, assert if no elements", "[LinkedList]")
 {
@@ -105,7 +173,7 @@ TEST_CASE("remove(value) – remove all elements with matching value", "[LinkedLis
 {
 	std::cout << std::endl;
 	std::cout << "--------------------------------" << std::endl;
-	std::cout << "Remove (remove 3rd node, data: 12)" << std::endl;
+	std::cout << "Remove (remove 5th node, data: 5)" << std::endl;
 	std::cout << "--------------------------------" << std::endl;
 	LinkedList demoLinkedList;
 	demoLinkedList.pushBack(7);
@@ -117,12 +185,13 @@ TEST_CASE("remove(value) – remove all elements with matching value", "[LinkedLis
 	demoLinkedList.Print();
 	REQUIRE(demoLinkedList.count() == 6);
 	std::cout << "--------------------------------" << std::endl;
-	std::cout << "remove 3rd node, data: 12" << std::endl;
-	demoLinkedList.remove(12);
+	std::cout << "remove 5th node, data: 5" << std::endl;
+	demoLinkedList.remove(5);
 	demoLinkedList.Print();
 	REQUIRE(demoLinkedList.count() == 5);
 	std::cout << "--------------------------------" << std::endl;
 }
+
 TEST_CASE("popBack() – remove the last element", "[LinkedList]") 
 {
 	std::cout << std::endl;
@@ -191,7 +260,6 @@ TEST_CASE("empty() – return a Boolean, true if the list is empty, false otherwis
 	std::cout << "--------------------------------" << std::endl;
 }
 
-//
 TEST_CASE("clear() – remove all elements from the list", "[LinkedList]")
 {
 	std::cout << "--------------------------------" << std::endl;

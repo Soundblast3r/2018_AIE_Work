@@ -12,13 +12,16 @@ public:
 	bool EndloopFound;
 
 	void pushBack(int value);
+	void pushFront(int value);
 	void popFront();
 	void popBack();
 
 	void Print();
 	int count();
 	int last();
+	int & first();
 	bool empty();
 	void remove(int NodeValue);
 	void clear();
+	//void begin();
 };
