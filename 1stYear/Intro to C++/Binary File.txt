@@ -1,0 +1,60 @@
+else if (option == 2)
+	{
+		struct Player
+		{
+			char name[32];
+			int health;
+		};
+
+		//create 3 players
+		Player players[3];
+
+		strcpy_s(players[0].name, "Bob");
+		players[0].health = 10;
+
+		strcpy_s(players[1].name, "Gary");
+		players[1].health = 8;
+
+		strcpy_s(players[2].name, "John");
+		players[2].health = 9;
+
+		//WRITING
+		std::fstream writeFile;
+
+		writeFile.open("file.dat", std::ios_base::out | std::ios_base::binary);
+
+		if (writeFile.is_open())
+		{					 //address of first byte , how many bytes
+			writeFile.write((char*)&players[0], sizeof(Player) * 3);
+			writeFile.close();
+		}
+
+		//READING
+		Player loadedPlayers[3];
+		std::fstream readFile;
+		readFile.open("file.dat", std::ios_base::in | std::ios_base::binary);
+
+		if (readFile.is_open())
+		{
+			readFile.read((char*)loadedPlayers, sizeof(Player) * 3);
+			readFile.close();
+		}
+
+		//REPLACING
+		std::fstream replaceFile;
+
+		replaceFile.open("file.dat", std::ios_base::binary | std::ios_base::in | std::ios_base::out);
+
+		if (replaceFile.is_open())
+		{
+			Player newPlayer;
+			strcpy_s(newPlayer.name, "REPLACEMENT");
+			newPlayer.health = 666;
+
+			//seek to second player entry and write our new player into the file at that position
+			replaceFile.seekp(sizeof(Player), std::ios_base::beg);
+			replaceFile.write((char*)&newPlayer, sizeof(Player));
+
+			replaceFile.close();
+		}
+	}
