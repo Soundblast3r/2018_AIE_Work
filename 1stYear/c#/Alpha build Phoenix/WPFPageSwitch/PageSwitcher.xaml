@@ -1,0 +1,17 @@
+﻿<Window x:Class="ThePhoenix.PageSwitcher"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="The Phoenix" Height="638" Width="816" ResizeMode="NoResize">
+    {
+    this.Load += new System.EventHandler(this.CallTrak_Load);
+    }
+
+//in CallTrak.Load
+private void CallTrak_Load(object sender, EventArgs e)
+{
+    System.Drawing.Icon ico = Properties.Resources.PhoenixQuill;
+    this.Icon = ico;
+}
+    
+</Window>
+    

@@ -1,0 +1,197 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+	mc:Ignorable="d"
+	x:Class="ThePhoenix.PhoenixMainPage"
+	d:DesignWidth="640" d:DesignHeight="480" Width="800" Height="600">
+
+    <Grid x:Name="PhoenixMainPageLayoutRoot">
+        <Grid.Background>
+            <ImageBrush ImageSource="Images\photos\2Q==.jpg"/>
+        </Grid.Background>
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="73.437" VerticalAlignment="Top" Width="800" RenderTransformOrigin="0.499,0.514">
+            <TabItem Header="Updates" Margin="-2,0,-140,0">
+                <Grid Background="#FFE5E5E5">
+                    <Button Content="Team Updates" HorizontalAlignment="Left" Height="41" VerticalAlignment="Top" Width="255" Click="Teambutton_Click"/>
+                    <Button Content="Map updates" HorizontalAlignment="Left" Height="41" VerticalAlignment="Top" Width="254" Click="MapUpdatebutton_Click" Margin="268,0,0,0" IsEnabled="False"/>
+                    <Button Content="Projects" HorizontalAlignment="Left" Height="41" VerticalAlignment="Top" Width="256" Click="Projectbutton_Click" Margin="534,0,0,0" IsEnabled="False"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Newsletter" Margin="139,0,-291,0" IsEnabled="False">
+                <Button x:Name="Newsletter_Button" Content="Download or View Newsletter or archived Newsletters" HorizontalAlignment="Left" VerticalAlignment="Top" Width="790" Height="41.477" FontSize="20" Click="NewsletterButton_Click" IsEnabled="False"/>
+            </TabItem>
+            <TabItem Header="About" Margin="290,0,-394,0" IsSelected="True" HorizontalAlignment="Left" Width="214">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="button" Content="About" HorizontalAlignment="Left" VerticalAlignment="Top" Width="790" Height="41.477" FontSize="20" Click="AboutButton_Click"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <ProgressBar x:Name="Main_Progress_Bar" Height="42.755" Margin="10,118.264,10,0" VerticalAlignment="Top" Value="824" Foreground="#FF00C11A" HorizontalContentAlignment="Center" Maximum="160000" SmallChange="1"/>
+        <Rectangle x:Name="Main_Progress_Bar_lable_background" Fill="#FFF4F4F5" Height="24.412" Margin="122.295,88.186,0,0" Stroke="Black" VerticalAlignment="Top" RadiusY="20.877" RadiusX="20.877" HorizontalAlignment="Left" Width="261.657"/>
+        <Label x:Name="Current_Project_Progress_Lable" Content="Current project progress" Height="34.827" Margin="160.254,88.186,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="189.159" HorizontalContentAlignment="Center"/>
+        <Rectangle x:Name="Main_Progress_Bar_lable_background_Copy" Fill="#FFF4F4F5" Height="24.412" Margin="0,88.186,130.437,0" Stroke="Black" VerticalAlignment="Top" RadiusY="20.877" RadiusX="20.877" HorizontalAlignment="Right" Width="193.657"/>
+        <Label x:Name="Current_project_lable" Content="AinCraft" Height="25.078" Margin="0,88.186,156,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="140" HorizontalContentAlignment="Center"/>
+        <TabControl x:Name="FloorRange_tabControl" Margin="10,166.019,10,10">
+            <TabItem x:Name="Floors_1_10_tab" Header="Floors 1-10" Margin="-2,-2,-6,-1" FontSize="10">
+                <Grid Background="#FFE5E5E5">
+                    <Canvas x:Name="Floor_1_10_Canvas">
+                        <Button Height="65" HorizontalAlignment="Right" Width="358" Content="Floor 1" Click="Floor_1_Button" AutomationProperties.HelpText="Click this to take you to Floor 1's update page" Canvas.Left="10" Canvas.Top="10" Background="#FF00C11A"/>
+                        <Button Height="64" HorizontalAlignment="Right" Width="358" Content="Floor 2" Click="Floor_2_Button" AutomationProperties.HelpText="Click this to take you to Floor 2's update page" Canvas.Left="10" Canvas.Top="88" Background="#FF00C11A" IsEnabled="False"/>
+                        <Button Height="65" HorizontalAlignment="Right" Width="358" Content="Floor 3" Click="Floor_3_Button" AutomationProperties.HelpText="Click this to take you to Floor 3's update page" Canvas.Left="10" Canvas.Top="165" IsEnabled="False"/>
+                        <Button Height="64" HorizontalAlignment="Right" Width="358" Content="Floor 4" Click="Floor_4_Button" AutomationProperties.HelpText="Click this to take you to Floor 4's update page" Canvas.Left="10" Canvas.Top="243" IsEnabled="False"/>
+                        <Button Height="65" HorizontalAlignment="Right" Width="358" Content="Floor 5" Click="Floor_5_Button" AutomationProperties.HelpText="Click this to take you to Floor 5's update page" Canvas.Left="10" Canvas.Top="320" Background="Red"/>
+                        <Button Height="65" HorizontalAlignment="Right" Width="358" Content="Floor 6" Click="Floor_6_Button" AutomationProperties.HelpText="Click this to take you to Floor 6's update page" Canvas.Left="402" Canvas.Top="10" IsEnabled="False"/>
+                        <Button Height="64" HorizontalAlignment="Right" Width="358" Content="Floor 7" Click="Floor_7_Button" AutomationProperties.HelpText="Click this to take you to Floor 7's update page" Canvas.Left="402" Canvas.Top="88" IsEnabled="False"/>
+                        <Button Height="65" HorizontalAlignment="Right" Width="358" Content="Floor 8" Click="Floor_8_Button" AutomationProperties.HelpText="Click this to take you to Floor 8's update page" Canvas.Left="402" Canvas.Top="165" IsEnabled="False"/>
+                        <Button Height="64" HorizontalAlignment="Right" Width="358" Content="Floor 9" Click="Floor_9_Button" AutomationProperties.HelpText="Click this to take you to Floor 9's update page" Canvas.Left="402" Canvas.Top="243" IsEnabled="False"/>
+                        <Button Height="65" HorizontalAlignment="Right" Width="358" Content="Floor 10" Click="Floor_10_Button" AutomationProperties.HelpText="Click this to take you to Floor 10's update page" Canvas.Left="402" Canvas.Top="320" IsEnabled="False"/>
+                    </Canvas>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Floors_11_20_tab_Copy" Header="Floors 11-20" Margin="6,-2,-15,-1" FontSize="10" IsEnabled="False">
+                <Grid Background="#FFE5E5E5">
+                    <Canvas x:Name="Floor_11_20_Canvas">
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 11" Click="Floor_11_Button" AutomationProperties.HelpText="Click this to take you to Floor 11's update page" Height="65" Canvas.Left="10" Canvas.Top="10"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 12" Click="Floor_12_Button" AutomationProperties.HelpText="Click this to take you to Floor 12's update page" Height="64" Canvas.Left="10" Canvas.Top="88"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 16" Click="Floor_16_Button" AutomationProperties.HelpText="Click this to take you to Floor 16's update page" Height="65" Canvas.Left="402" Canvas.Top="10"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 17" Click="Floor_17_Button" AutomationProperties.HelpText="Click this to take you to Floor 17's update page" Height="64" Canvas.Left="402" Canvas.Top="88"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 18" Click="Floor_18_Button" AutomationProperties.HelpText="Click this to take you to Floor 18's update page" Height="67" Canvas.Left="402" Canvas.Top="163"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 19" Click="Floor_19_Button" AutomationProperties.HelpText="Click this to take you to Floor 19's update page" Height="64" Canvas.Left="402" Canvas.Top="241"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 20" Click="Floor_20_Button" AutomationProperties.HelpText="Click this to take you to Floor 20's update page" Height="65" Canvas.Left="402" Canvas.Top="318"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 13" Click="Floor_13_Button" AutomationProperties.HelpText="Click this to take you to Floor 13's update page" Height="67" Canvas.Left="10" Canvas.Top="163"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 14" Click="Floor_14_Button" AutomationProperties.HelpText="Click this to take you to Floor 14's update page" Height="64" Canvas.Left="10" Canvas.Top="241"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 15" Click="Floor_15_Button" AutomationProperties.HelpText="Click this to take you to Floor 15's update page" Height="65" Canvas.Left="10" Canvas.Top="318"/>
+                    </Canvas>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Floors_21_30_tab" Header="Floors 21-30" Margin="15,-2,-25,-1" FontSize="10" IsEnabled="False">
+                <Grid Background="#FFE5E5E5">
+                    <Canvas x:Name="Floor_21_30_Canvas">
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 21" Click="Floor_21_Button" AutomationProperties.HelpText="Click this to take you to Floor 21's update page" Margin="0,63,518,307"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 22" Click="Floor_22_Button" AutomationProperties.HelpText="Click this to take you to Floor 22's update page" Margin="0,103,518,267"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 23" Click="Floor_23_Button" AutomationProperties.HelpText="Click this to take you to Floor 23's update page" Margin="0,142,518,228"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 24" Click="Floor_24_Button" AutomationProperties.HelpText="Click this to take you to Floor 24's update page" Margin="0,189,518,181"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 25" Click="Floor_25_Button" AutomationProperties.HelpText="Click this to take you to Floor 25's update page" Margin="0,242,518,128"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 26" Click="Floor_26_Button" AutomationProperties.HelpText="Click this to take you to Floor 26's update page" Margin="0,63,202,307"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 27" Click="Floor_27_Button" AutomationProperties.HelpText="Click this to take you to Floor 27's update page" Margin="0,111,234,259"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 28" Click="Floor_28_Button" AutomationProperties.HelpText="Click this to take you to Floor 28's update page" Margin="0,172,265,198"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 29" Click="Floor_29_Button" AutomationProperties.HelpText="Click this to take you to Floor 29's update page" Margin="0,225,265,145"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 30" Click="Floor_30_Button" AutomationProperties.HelpText="Click this to take you to Floor 30's update page" Margin="0,282,254,88"/>
+                    </Canvas>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Floors_31_40_tab" Header="Floors 31-40" Margin="25,-2,-33,-1" FontSize="10" IsEnabled="False">
+                <Grid Background="#FFE5E5E5">
+                    <Canvas x:Name="Floor_31_40_Canvas">
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 31" Click="Floor_31_Button" AutomationProperties.HelpText="Click this to take you to Floor 31's update page" Margin="0,63,518,307"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 32" Click="Floor_32_Button" AutomationProperties.HelpText="Click this to take you to Floor 32's update page" Margin="0,103,518,267"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 33" Click="Floor_33_Button" AutomationProperties.HelpText="Click this to take you to Floor 33's update page" Margin="0,142,518,228"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 34" Click="Floor_34_Button" AutomationProperties.HelpText="Click this to take you to Floor 34's update page" Margin="0,189,518,181"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 35" Click="Floor_35_Button" AutomationProperties.HelpText="Click this to take you to Floor 35's update page" Margin="0,242,518,128"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 36" Click="Floor_36_Button" AutomationProperties.HelpText="Click this to take you to Floor 36's update page" Margin="0,63,202,307"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 37" Click="Floor_37_Button" AutomationProperties.HelpText="Click this to take you to Floor 37's update page" Margin="0,111,234,259"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 38" Click="Floor_38_Button" AutomationProperties.HelpText="Click this to take you to Floor 38's update page" Margin="0,172,265,198"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 39" Click="Floor_39_Button" AutomationProperties.HelpText="Click this to take you to Floor 39's update page" Margin="0,225,265,145"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 40" Click="Floor_40_Button" AutomationProperties.HelpText="Click this to take you to Floor 40's update page" Margin="0,282,254,88"/>
+                    </Canvas>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Floors_41_50_tab_Copy3" Header="Floors 41-50" Margin="33,-2,-43,-1" FontSize="10" IsEnabled="False">
+                <Grid Background="#FFE5E5E5">
+                    <Canvas x:Name="Floor_41_50_Canvas">
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 41" Click="Floor_41_Button" AutomationProperties.HelpText="Click this to take you to Floor 41's update page" Margin="0,63,518,307"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 42" Click="Floor_42_Button" AutomationProperties.HelpText="Click this to take you to Floor 42's update page" Margin="0,103,518,267"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 43" Click="Floor_43_Button" AutomationProperties.HelpText="Click this to take you to Floor 43's update page" Margin="0,142,518,228"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 44" Click="Floor_44_Button" AutomationProperties.HelpText="Click this to take you to Floor 44's update page" Margin="0,189,518,181"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 45" Click="Floor_45_Button" AutomationProperties.HelpText="Click this to take you to Floor 45's update page" Margin="0,242,518,128"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 46" Click="Floor_46_Button" AutomationProperties.HelpText="Click this to take you to Floor 46's update page" Margin="0,63,202,307"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 47" Click="Floor_47_Button" AutomationProperties.HelpText="Click this to take you to Floor 47's update page" Margin="0,111,234,259"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 48" Click="Floor_48_Button" AutomationProperties.HelpText="Click this to take you to Floor 48's update page" Margin="0,172,265,198"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 49" Click="Floor_49_Button" AutomationProperties.HelpText="Click this to take you to Floor 49's update page" Margin="0,225,265,145"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 50" Click="Floor_50_Button" AutomationProperties.HelpText="Click this to take you to Floor 50's update page" Margin="0,282,254,88"/>
+                    </Canvas>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Floors_51_60_tab" Header="Floors 51-60" Margin="43,-2,-52,-1" FontSize="10" IsEnabled="False">
+                <Grid Background="#FFE5E5E5">
+                    <Canvas x:Name="Floor_51_60_Canvas">
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 51" Click="Floor_51_Button" AutomationProperties.HelpText="Click this to take you to Floor 51's update page" Margin="0,63,518,307"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 52" Click="Floor_52_Button" AutomationProperties.HelpText="Click this to take you to Floor 52's update page" Margin="0,103,518,267"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 53" Click="Floor_53_Button" AutomationProperties.HelpText="Click this to take you to Floor 53's update page" Margin="0,142,518,228"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 54" Click="Floor_54_Button" AutomationProperties.HelpText="Click this to take you to Floor 54's update page" Margin="0,189,518,181"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 55" Click="Floor_55_Button" AutomationProperties.HelpText="Click this to take you to Floor 55's update page" Margin="0,242,518,128"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 56" Click="Floor_56_Button" AutomationProperties.HelpText="Click this to take you to Floor 56's update page" Margin="0,63,202,307"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 57" Click="Floor_57_Button" AutomationProperties.HelpText="Click this to take you to Floor 57's update page" Margin="0,111,234,259"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 58" Click="Floor_58_Button" AutomationProperties.HelpText="Click this to take you to Floor 58's update page" Margin="0,172,265,198"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 59" Click="Floor_59_Button" AutomationProperties.HelpText="Click this to take you to Floor 59's update page" Margin="0,225,265,145"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 60" Click="Floor_60_Button" AutomationProperties.HelpText="Click this to take you to Floor 60's update page" Margin="0,282,254,88"/>
+                    </Canvas>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Floors_61_70_tab" Header="Floors 61-70" Margin="52,-2,-61,-1" FontSize="10" IsEnabled="False">
+                <Grid Background="#FFE5E5E5">
+                    <Canvas x:Name="Floor_61_70_Canvas">
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 61" Click="Floor_61_Button" AutomationProperties.HelpText="Click this to take you to Floor 61's update page" Margin="0,63,518,307"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 62" Click="Floor_62_Button" AutomationProperties.HelpText="Click this to take you to Floor 62's update page" Margin="0,103,518,267"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 63" Click="Floor_63_Button" AutomationProperties.HelpText="Click this to take you to Floor 63's update page" Margin="0,142,518,228"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 64" Click="Floor_64_Button" AutomationProperties.HelpText="Click this to take you to Floor 64's update page" Margin="0,189,518,181"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 65" Click="Floor_65_Button" AutomationProperties.HelpText="Click this to take you to Floor 65's update page" Margin="0,242,518,128"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 66" Click="Floor_66_Button" AutomationProperties.HelpText="Click this to take you to Floor 66's update page" Margin="0,63,202,307"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 67" Click="Floor_67_Button" AutomationProperties.HelpText="Click this to take you to Floor 67's update page" Margin="0,111,234,259"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 68" Click="Floor_68_Button" AutomationProperties.HelpText="Click this to take you to Floor 68's update page" Margin="0,172,265,198"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 69" Click="Floor_69_Button" AutomationProperties.HelpText="Click this to take you to Floor 69's update page" Margin="0,225,265,145"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 70" Click="Floor_70_Button" AutomationProperties.HelpText="Click this to take you to Floor 70's update page" Margin="0,282,254,88"/>
+                    </Canvas>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Floors_71_80_tab" Header="Floors 71-80" Margin="61,-2,-70,-1" FontSize="10" IsEnabled="False">
+                <Grid Background="#FFE5E5E5">
+                    <Canvas x:Name="Floor_71_80_Canvas"/>
+                    <Button HorizontalAlignment="Right" Width="358" Content="Floor 71" Click="Floor_71_Button" AutomationProperties.HelpText="Click this to take you to Floor 71's update page" Margin="0,63,518,307"/>
+                    <Button HorizontalAlignment="Right" Width="358" Content="Floor 72" Click="Floor_72_Button" AutomationProperties.HelpText="Click this to take you to Floor 72's update page" Margin="0,103,518,267"/>
+                    <Button HorizontalAlignment="Right" Width="358" Content="Floor 73" Click="Floor_73_Button" AutomationProperties.HelpText="Click this to take you to Floor 73's update page" Margin="0,142,518,228"/>
+                    <Button HorizontalAlignment="Right" Width="358" Content="Floor 74" Click="Floor_74_Button" AutomationProperties.HelpText="Click this to take you to Floor 74's update page" Margin="0,189,518,181"/>
+                    <Button HorizontalAlignment="Right" Width="358" Content="Floor 75" Click="Floor_75_Button" AutomationProperties.HelpText="Click this to take you to Floor 75's update page" Margin="0,242,518,128"/>
+                    <Button HorizontalAlignment="Right" Width="358" Content="Floor 76" Click="Floor_76_Button" AutomationProperties.HelpText="Click this to take you to Floor 76's update page" Margin="0,63,202,307"/>
+                    <Button HorizontalAlignment="Right" Width="358" Content="Floor 77" Click="Floor_77_Button" AutomationProperties.HelpText="Click this to take you to Floor 77's update page" Margin="0,111,234,259"/>
+                    <Button HorizontalAlignment="Right" Width="358" Content="Floor 78" Click="Floor_78_Button" AutomationProperties.HelpText="Click this to take you to Floor 78's update page" Margin="0,172,265,198"/>
+                    <Button HorizontalAlignment="Right" Width="358" Content="Floor 79" Click="Floor_79_Button" AutomationProperties.HelpText="Click this to take you to Floor 79's update page" Margin="0,225,265,145"/>
+                    <Button HorizontalAlignment="Right" Width="358" Content="Floor 80" Click="Floor_80_Button" AutomationProperties.HelpText="Click this to take you to Floor 80's update page" Margin="0,282,254,88"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Floors_81_90_tab" Header="Floors 81-90" Margin="70,-2,-80,-1" FontSize="10" IsEnabled="False">
+                <Grid Background="#FFE5E5E5">
+                    <Canvas x:Name="Floor_81_90_Canvas"/>
+                    <Button HorizontalAlignment="Right" Width="358" Content="Floor 81" Click="Floor_81_Button" AutomationProperties.HelpText="Click this to take you to Floor 81's update page" Margin="0,63,518,307"/>
+                    <Button HorizontalAlignment="Right" Width="358" Content="Floor 82" Click="Floor_82_Button" AutomationProperties.HelpText="Click this to take you to Floor 82's update page" Margin="0,103,518,267"/>
+                    <Button HorizontalAlignment="Right" Width="358" Content="Floor 83" Click="Floor_83_Button" AutomationProperties.HelpText="Click this to take you to Floor 83's update page" Margin="0,142,518,228"/>
+                    <Button HorizontalAlignment="Right" Width="358" Content="Floor 84" Click="Floor_84_Button" AutomationProperties.HelpText="Click this to take you to Floor 84's update page" Margin="0,189,518,181"/>
+                    <Button HorizontalAlignment="Right" Width="358" Content="Floor 85" Click="Floor_85_Button" AutomationProperties.HelpText="Click this to take you to Floor 85's update page" Margin="0,242,518,128"/>
+                    <Button HorizontalAlignment="Right" Width="358" Content="Floor 86" Click="Floor_86_Button" AutomationProperties.HelpText="Click this to take you to Floor 86's update page" Margin="0,63,202,307"/>
+                    <Button HorizontalAlignment="Right" Width="358" Content="Floor 87" Click="Floor_87_Button" AutomationProperties.HelpText="Click this to take you to Floor 87's update page" Margin="0,111,234,259"/>
+                    <Button HorizontalAlignment="Right" Width="358" Content="Floor 88" Click="Floor_88_Button" AutomationProperties.HelpText="Click this to take you to Floor 88's update page" Margin="0,172,265,198"/>
+                    <Button HorizontalAlignment="Right" Width="358" Content="Floor 89" Click="Floor_89_Button" AutomationProperties.HelpText="Click this to take you to Floor 89's update page" Margin="0,225,265,145"/>
+                    <Button HorizontalAlignment="Right" Width="358" Content="Floor 90" Click="Floor_90_Button" AutomationProperties.HelpText="Click this to take you to Floor 90's update page" Margin="0,282,254,88"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Floors_91_100_tab" Header="Floors 91-100" Margin="78,-2,-88,-1" FontSize="10" IsEnabled="False">
+                <Grid Background="#FFE5E5E5">
+                    <Canvas x:Name="Floor_91_100_Canvas">
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 91" Click="Floor_91_Button" AutomationProperties.HelpText="Click this to take you to Floor 91's update page" Margin="0,63,518,307"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 92" Click="Floor_92_Button" AutomationProperties.HelpText="Click this to take you to Floor 92's update page" Margin="0,103,518,267"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 93" Click="Floor_93_Button" AutomationProperties.HelpText="Click this to take you to Floor 93's update page" Margin="0,142,518,228"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 94" Click="Floor_94_Button" AutomationProperties.HelpText="Click this to take you to Floor 94's update page" Margin="0,189,518,181"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 95" Click="Floor_95_Button" AutomationProperties.HelpText="Click this to take you to Floor 95's update page" Margin="0,242,518,128"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 96" Click="Floor_96_Button" AutomationProperties.HelpText="Click this to take you to Floor 96's update page" Margin="0,63,202,307"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 97" Click="Floor_97_Button" AutomationProperties.HelpText="Click this to take you to Floor 97's update page" Margin="0,111,234,259"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 98" Click="Floor_98_Button" AutomationProperties.HelpText="Click this to take you to Floor 98's update page" Margin="0,172,265,198"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 99" Click="Floor_99_Button" AutomationProperties.HelpText="Click this to take you to Floor 99's update page" Margin="0,225,265,145"/>
+                        <Button HorizontalAlignment="Right" Width="358" Content="Floor 100" Click="Floor_100_Button" AutomationProperties.HelpText="Click this to take you to Floor 100's update page" Margin="0,282,254,88"/>
+                    </Canvas>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>

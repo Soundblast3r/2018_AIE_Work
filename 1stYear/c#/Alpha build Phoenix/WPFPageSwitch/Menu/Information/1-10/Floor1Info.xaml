@@ -1,0 +1,783 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="ThePhoenix.Floor1Info"
+	d:DesignWidth="640" d:DesignHeight="480" Width="800" Height="600">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush ImageSource="..\..\Images\photos\2Q==.jpg"/>
+        </Grid.Background>
+        <Popup/>
+        <Label x:Name="Floor_1_Info_Codename" Content="Codename: Alpha" HorizontalAlignment="Left" Height="39" Margin="299,21,0,0" VerticalAlignment="Top" Width="197" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="White" FontSize="20"/>
+        <ProgressBar x:Name="Main_Progress_Bar_Copy" Height="45" Margin="21,77,19,0" VerticalAlignment="Top" Foreground="#FF00C11A" HorizontalContentAlignment="Center" LargeChange="0.5" Maximum="1600" Value="814"/>
+        <TabControl x:Name="tabControl1" HorizontalAlignment="Left" Height="407" VerticalAlignment="Top" Width="760" Margin="21,153,0,0" TabStripPlacement="Left">
+            <TabItem Header="Geography" Margin="0,-2,-1,-22" >
+                <Grid Background="#FFE5E5E5">
+                    <TabControl HorizontalAlignment="Left" Height="397" VerticalAlignment="Top" Width="621">
+                        <TabItem Header="Main Towns" Margin="69,-2,-69,-1">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="The Town of Beginnings" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="The Town of Beginnings is located on the southern end of the floor and rests over the edge of the floating castle. The metropolis encompasses twenty percent of the floor's surface area and is the focal point of the floor, featuring the teleport gate in the central plaza. The city wall forms a semi-circle to the north." VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Tolbana" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601"><Run Text="Tolbana is the second largest town on the 1st Floor, at approximately 200 meters wide. It is the closest town to the 1st Floor Labyrinth, only 30 minutes away from its entrance, and was the site of the first 1st floor boss strategy conference. The town is lined with large windmills. Players first arrived at Tolbana three weeks after official service of SAO began."/><LineBreak/><Run/><LineBreak/><Run Text="Tolbana has several bars and restaurants, 3 inns, and a number of NPC houses. Kirito rented the 2nd floor of a farmer's house once for ten days. Tolbana also has several fountains and an amphitheatre-like meeting place. Its main plaza is known as Fountain Square."/><LineBreak/><Run Text=""/></TextBlock>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Horunka" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601"><Run Text="Horunka Village is the second village on the 1st Floor. Kirito offers to show Klein the way to Horunka Village on the first day, but eventually proceeds on his own. It lies to the northwest of the Town of Beginnings. It is also the place where one can start a quest to obtain an Anneal Blade."/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Sub Towns" Margin="68,-2,-73,-1">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="Perditae" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601"><Run Text="The Ruined town, or Perditae is located on the south east of the Town of Beginnings and rests on the edge of the floor. The small town is surrounded by a wall that is two and a half times a high as players."/><LineBreak/><Run/><LineBreak/><Run Text="once the 19th floor boss has been beaten for the first time, "/><LineBreak/><Run Text="a mini event will occur, to which the front gate will unlock and mobs will then start spawning here."/><LineBreak/><Run Text="the lights within the town will also turn on."/><LineBreak/><Run/></TextBlock>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Castellium" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601"><Run Text="Castelium is a very small town that consists of about 12 buildings"/><LineBreak/><Run Text="The main part of the miniature town is the cathedral there, which is used by players to reach the labyrinth."/><LineBreak/><Run/><LineBreak/><Run Text="the town is surrounded by a high mountain with a cave in the southern part of the circular mountain"/><LineBreak/><Run/></TextBlock>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Locations" Margin="72,-2,-72,-1" HorizontalAlignment="Left" Width="64">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="The Citadel" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="601" Height="34" VerticalAlignment="Top"><Run Text="the geography of the Citadel has been split into two entries, the citadel itself, and then PvP arena."/><LineBreak/><Run Text="the two are seperate locations, but the First floor Citadel is the only way to get to the First set of floors Arena"/></TextBlock>
+                                            <TabControl HorizontalAlignment="Left" Height="299" VerticalAlignment="Top" Width="601" Margin="0,34,0,0">
+                                                <TabItem Header="The Citadel" Margin="-2,-2,-2,-1">
+                                                    <Grid Background="#FFE5E5E5">
+                                                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="591" Height="267" VerticalAlignment="Top"><Run Text="the Citadel is essentially a small amount of hell that has been put in the over world, as that is where it leads to."/><LineBreak/><Run Text="the Citadel has a &quot;symbolic&quot; portal, but the actual Nether Portal to the PVP arena's portal is in the main hallway underneath the Citadel."/><LineBreak/><Run/><LineBreak/><Run Text="within the Citadel there is a large room that is a false portal, on the second floor, this is accessed via going through the main hallway and entering the ___ entrance to the ___ from the nether portal facing the staircase at the end of the hallway."/><LineBreak/><Run/><LineBreak/><Run Text="there are also all of the towers within the Citadels walls."/><LineBreak/><Run Text="most of these are not able to be climbed, however a few are, at the top of these towers are items of nether origin."/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+                                                    </Grid>
+                                                </TabItem>
+                                                <TabItem Header="PVP arena floor 1" Margin="1,-2,-5,-1">
+                                                    <Grid Background="#FFE5E5E5">
+                                                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="267" Width="591"><Run Text="Like all PvP arena's, this Arena is between half and a quarter the size of the First floor."/><LineBreak/><Run Text="following the themes of the Citadel, and located in the Nether, the floor 1 - 10 PvP arena is based as a self contained arena in the nether, that is a disk surrounded by mountains of NetherRack. the PvP arena itself is made up of two individual large detailed Nether Fortress's, a section of a lava lake, a section of standard nether terrain."/><LineBreak/><Run/><LineBreak/><Run Text="The lava lake is more small thin area's ideal for knocking people off the edge and into the lava."/><LineBreak/><Run/><LineBreak/><Run Text="The first of the nether fortress's is based of an original Nether fortress, but both of the separate nether fortress's must be detailed and interesting, whilst still remaining reminiscent of the original build of the Nether Fortress's"/><LineBreak/><Run/><LineBreak/><Run Text="The final area is a based off the nether terrain that is naturally generated."/><LineBreak/><Run/></TextBlock>
+                                                    </Grid>
+                                                </TabItem>
+                                            </TabControl>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="the Forest" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601"><Run Text="The Forest is located in the center of the First Floor, and whilst being both a location and biome, this entry will cover the tree's designs and the few odd buildings within the Forest"/><LineBreak/><Run/><LineBreak/><Run Text="the tree's within the forest are made of Dark Oak an Oak, as well as consisting of both Dark Oak and Oak leaves"/><LineBreak/><Run/><LineBreak/><Run Text="the buildings inside the are built out of mostly wood, with lots of bracing and alterations in terms of extreme detail."/><LineBreak/><Run/></TextBlock>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="The Water Temple" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock x:Name="textBlock_Copy6" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601"><Run Text="The Water temple is located underneath the lake."/><LineBreak/><Run Text="it is a maze of tunnels that go through the water temple. they wind up and down, and left and right, and forwards and backwards. not only is it a massive maze, but a three dimensional labyrinth, working both to confuse and annoy the player, not to mention that when you enter the water temple, you get hit with infinite to blindness which is only lifted within the water temple whilst you are in a Mini Boss room, when the player leaves the Mini Boss room they are hit with blindness again"/><LineBreak/><Run Text="when a player leaves the water temple this effect is removed"/><LineBreak/><Run/><LineBreak/><Run Text="when you enter the water temple, there are three directions to go."/><LineBreak/><Run/><LineBreak/><Run Text="1. to the left there is a tunnel that leads to two of the 4 Mini Boss battles, there are traps and puzzles that go throughout the temple"/><LineBreak/><Run/><LineBreak/><Run Text="2. to the right there is a another set of tunnels, to which there are more puzzles and traps, however there is also a tp gate there, which will take the player to a separate place, which is based of an old codenamed project (See Pandora's box)"/><LineBreak/><Run/><LineBreak/><Run Text="3. walking straight ahead there is a Sea Lantern tree, which as two secret rooms in it, which are triggered to open by proximity, one is underneath the tree"/><LineBreak/><Run Text="another is in the rear wall. both have water temple themed weapons and items."/><LineBreak/><Run/></TextBlock>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="amphitheater " Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Biomes" Margin="71,-2,-75,-1" IsEnabled="False">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="Plains Biome" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Forest Biome" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Labyrinth Biome" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add Text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Floor desc" Margin="-268,-2,264,-1" IsSelected="True">
+                            <Grid Background="#FFE5E5E5">
+                                <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Height="365" TextWrapping="Wrap" VerticalAlignment="Top" Width="611"><Run Text="Unlike the higher floors of Aincrad, the 1st Floor does not have a particular theme or dominant geography. As the starting location of all new players, the great expanse of the 1st Floor is quite diverse."/><LineBreak/><Run/><LineBreak/><Run Text="Grasslands surround the Town of Beginnings, and they are populated primarily by boar and wolf-type monsters. Worms, beetles, and wasp-type insect monsters also inhabit the grasslands surrounding the Town of Beginnings."/><LineBreak/><Run/><LineBreak/><Run Text="To the northwest of the Town of Beginnings, there is a deep forest region. The northeast is a lake region. Players must pass through either of the two regions before reaching a significantly more dangerous mountainous region containing ruins, valleys, and more difficult monsters."/><LineBreak/><Run/><LineBreak/><Run Text="The 1st Floor Labyrinth is located on the far northern edge of the floor. It begins at part of a large 300 meter wide by 100 meter tall tower that is a portion of the dungeon that leads to the 2nd Floor. This Labyrinth has twenty floors before the boss room on the 20th floor of the Labyrinth."/></TextBlock>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Tp Co-ordinates" Margin="0,22,-1,-47" IsEnabled="False">
+                <Grid Background="#FFE5E5E5">
+                    <TabControl HorizontalAlignment="Left" Height="397" VerticalAlignment="Top" Width="621">
+                        <TabItem Header="Main Towns" Margin="-2,-2,-2,-1">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="The Town of Beginnings" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Tolbana" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Horunka" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Sub Towns" Margin="1,-2,-5,-1">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="Perditae" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Castellium" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Locations" Margin="4,-2,-8,-1">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="The Citadel" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601" Text="Textblock"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="the Forrest" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="The Water Temple" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="The Lake" Margin="7,-2,-11,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Biomes" Margin="7,-2,-11,-1">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="Plains Biome" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Forest Biome" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Labyrinth Biome" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add Text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Lore and themes" Margin="0,47,-1,-71">
+                <Grid Background="#FFE5E5E5">
+                    <TabControl HorizontalAlignment="Left" Height="397" VerticalAlignment="Top" Width="621">
+                        <TabItem Header="Main Towns" Margin="-2,-2,-2,-1" IsEnabled="False">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="The Town of Beginnings" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Background="Red"><Run Text="The Town of Beginnings is the First Proper Town that Plaers come across, and as such, is also the largest in the game."/><LineBreak/><Run Text="whilst it is large, it contains numerous things within it that last the entirerety of the game,"/><LineBreak/><Run Text="it has a large Courtyard in the center of the town, called the Clocktower Courtyard, which is where Kayaba Traps ALL players at the start of the game."/></TextBlock>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Tolbana" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add Text Here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Horunka" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Add Text here" VerticalAlignment="Top" Height="333" Width="601" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Sub Towns" Margin="1,-2,-5,-1" IsSelected="True">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="Perditae" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="227" TextWrapping="Wrap" VerticalAlignment="Top" Width="601"><Run Text="Long ago, to the east of The Town of Beginnings, there stood a small farming town. its name has been lost in time. over 400 or so years, the small farming town has been largely forgotten, and has fallen to piece sits name became Perditae, meaning &quot;Ruins&quot; (adj. in context of ruined town or city) in Latin."/><LineBreak/><Run/><LineBreak/><Run Text="However most of the original people of the once busy, Bustling farming town had left, due to the small town becoming obsolete with the Town of Beginnings having its own food source and great trade relations  with Tolbana, Perditae was dying, Jobs had become scarce and most of the people had moved on to where they could find work. no longer having many travelers, nor jobs, most of the people left leaving few to fend for themselves within the towns walls."/><LineBreak/><Run/><LineBreak/><Run Text="Time passed and now, with crumbling houses and overgrown gardens and farms, the only thing that remains well kept is the eerie Cathedral that watches over the small farming town, with a vast system of maze like tunnels underneath it. No one knows what thier purpose is or why they where built.the outer walls also seem to be in good conditio"/><Run Text="n with the Bonfire"/><Run Text="s w"/><Run Text="ithin the walls somehow alwa"/><Run Text="ys re"/><Run Text="maining lit."/></TextBlock>
+                                            <TabControl HorizontalAlignment="Left" Height="106" Margin="0,227,0,0" VerticalAlignment="Top" Width="601">
+                                                <TabItem Header="Pre Floor 19 boss being defeated by the first players" IsSelected="True">
+                                                    <Grid Background="#FFE5E5E5">
+                                                        <TextBlock HorizontalAlignment="Left" Height="74" TextWrapping="Wrap" VerticalAlignment="Top" Width="591"><Run Text="Not all the population of Perditae had left, some remained, but their fates remain unknown as no one has been able to gain access to the small farming town since most of the people left there."/><LineBreak/><Run Text="The remaining people sealed the Front gate shut"/><LineBreak/><Run Text="whatever remains inside, is a mystery..."/></TextBlock>
+                                                    </Grid>
+                                                </TabItem>
+                                                <TabItem Header="Post Floor 19 boss being defeated by the first players">
+                                                    <Grid Background="#FFE5E5E5">
+                                                        <TextBlock HorizontalAlignment="Left" Height="74" TextWrapping="Wrap" Text="Not all of the population had left Perditae, but those that remained suffered greatly after a great sickness had ravaged the self contained Sealed Town. Only few humans remained, and those that did sought refuge within the cathedral, the rest of the stayed in the town are now husks of their original selves, craving eternal peace, if only the covenant of the Cathedral not punished those that remained for the acts of those that left." VerticalAlignment="Top" Width="591"/>
+                                                    </Grid>
+                                                </TabItem>
+                                            </TabControl>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Castellium" Margin="1,-2,-5,-1" IsEnabled="False">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Add Text here" VerticalAlignment="Top" Height="333" Width="601" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Locations" Margin="4,-2,-8,-1">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="The Citadel" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="601" Height="34" VerticalAlignment="Top"><Run Text="Built by a collection of people from all over the place. A Citadel is on every 10 floors..."/><LineBreak/><Run Text="The Citadel is a gateway to the PvP Arena which is held within the nether."/><LineBreak/><Run/></TextBlock>
+                                            <TabControl HorizontalAlignment="Left" Height="299" VerticalAlignment="Top" Width="601" Margin="0,34,0,0">
+                                                <TabItem Header="The Citadel" Margin="-2,-2,-2,-1">
+                                                    <Grid Background="#FFE5E5E5">
+                                                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="591" Height="267" VerticalAlignment="Top" Text="The Citadel was made in homage the the area's that were made within the map that players could and can verse each other without consequence of "/>
+                                                    </Grid>
+                                                </TabItem>
+                                                <TabItem Header="PVP arena floor 1" Margin="1,-2,-5,-1">
+                                                    <Grid Background="#FFE5E5E5">
+                                                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601"><Run Text="The first floor PVP arena is about half the size of the First floor, and is the smallest of the ten arena's."/><LineBreak/><Run Text="all area's of the PvP area have an opening and a closing, but some area's are more defendable then others"/><LineBreak/><Run/></TextBlock>
+                                                    </Grid>
+                                                </TabItem>
+                                            </TabControl>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="the Forrest" Margin="1,-2,-5,-1" IsEnabled="False">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Add Text Here" VerticalAlignment="Top" Height="333" Width="601" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="The Water Temple" Margin="4,-2,-8,-1" IsEnabled="False">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Background="Red"><Run Text=":AKGSDkljblaskbdfgklhasbdgfklbadgnksb"/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run Text="WHAT DO I WRITE HERE?!?!?!?!"/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Biomes" Margin="7,-2,-11,-1" IsEnabled="False">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="Plains Biome" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Forest Biome" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Labyrinth Biome" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add Text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Quests" Margin="0,71,-1,-95" IsEnabled="False">
+                <Grid Background="#FFE5E5E5">
+                    <TabControl HorizontalAlignment="Left" Height="397" VerticalAlignment="Top" Width="621">
+                        <TabItem Header="Main Towns" Margin="-2,-2,-2,-1">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="The Town of Beginnings" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Tolbana" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Horunka" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Sub Towns" Margin="1,-2,-5,-1">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="Perditae" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Castellium" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Locations" Margin="4,-2,-8,-1">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="The Citadel" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601" Text="Textblock"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="the Forrest" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="The Water Temple" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Biomes" Margin="7,-2,-11,-1">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="Plains Biome" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Forest Biome" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Labyrinth Biome" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add Text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Area Requirements" Margin="0,95,-1,-121" IsEnabled="False">
+                <Grid Background="#FFE5E5E5">
+                    <TabControl HorizontalAlignment="Left" Height="397" VerticalAlignment="Top" Width="621">
+                        <TabItem Header="Main Towns" Margin="-2,-2,-2,-1">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="The Town of Beginnings" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Tolbana" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Horunka" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Sub Towns" Margin="1,-2,-5,-1">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="Perditae" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Castellium" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Locations" Margin="4,-2,-8,-1">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="The Citadel" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601" Text="Textblock"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="the Forrest" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="The Water Temple" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Biomes" Margin="7,-2,-11,-1">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="Plains Biome" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Forest Biome" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Labyrinth Biome" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add Text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Area secrets" Margin="0,121,-1,-145" IsEnabled="False">
+                <Grid Background="#FFE5E5E5">
+                    <TabControl HorizontalAlignment="Left" Height="397" VerticalAlignment="Top" Width="621">
+                        <TabItem Header="Main Towns" Margin="-2,-2,-2,-1">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="The Town of Beginnings" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Tolbana" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Horunka" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Sub Towns" Margin="1,-2,-5,-1">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="Perditae" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Castellium" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Locations" Margin="4,-2,-8,-1">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="The Citadel" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601" Text="Textblock"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="the Forrest" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="The Water Temple" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Biomes" Margin="7,-2,-11,-1">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="Plains Biome" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Forest Biome" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Labyrinth Biome" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add Text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Walkthrough" Margin="0,145,-1,-172">
+                <Grid Background="#FFE5E5E5">
+                    <TabControl HorizontalAlignment="Left" Height="397" VerticalAlignment="Top" Width="621">
+                        <TabItem Header="BETA STORY MODE" Margin="-2,-2,-2,-1">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="345" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="Overview of this Chapter" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601"><Run Text="this chapter is going to be compressed as it is the storyline for the BETA version of the game."/><LineBreak/><Run/><LineBreak/><Run Text="this will cover aspects about the first floor, and push forwards to the end of the floor without explaining where to go for quests, where as the actual story line will cover the start locationof Quests as well as their ending locations."/><LineBreak/><Run Text="as for the the information on the quests, please see the quest list in the main tab control to the left of this window."/><LineBreak/><Run/></TextBlock>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Opening" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601"><Run Text="*as a Beater logs into Aincrad for the first time, the opening credits will roll, and allow the player to see who cr"/><Run Text="eated the server, this is going to be an edit of the original, and will be incorporated into the mod and thus launcher."/><LineBreak/><Run Text="it will vary depending on the language setting, however to start off, all of them will play the Japanese version.*"/><LineBreak/><Run/><LineBreak/><Run Text="*as Beater logs in for first time, they are teleported to a tutorial world, this world is referenced as &quot;Tutorial_World&quot;*"/><LineBreak/><LineBreak/><Run Text="Beater is introduced to the AI that is running as help (in truth this &quot;AI&quot; is just the server &quot;pretending&quot; to be an AI as it wont be sentient, not have any additional programming set to it, it will only ask questions, and give results based on the answers it is given)"/><LineBreak/><Run/><LineBreak/><Run Text="Beater is then introduced to the controls, what is different from the normal game, and how to controls work"/><LineBreak/><Run/><LineBreak/><Run Text="Beater is then taught how currency works and how to buy things, they are given money to do this and MUST spend it to progress"/><LineBreak/><Run/><LineBreak/><Run Text="once the Beater walks through the tutorial world, they can step on a pad at the end of the corridor, and this will teleport them to the first floor, specifically, The Town of Beginnings teleport gate plaza, which is located in the center of the Clock Tower Courtyard to the north and directly in front of the clock tower."/><LineBreak/><LineBreak/><LineBreak/></TextBlock>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Part 1" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601"><Run Text="*Once the Beater is in The Town of Beginnings, they can focus on the main story line*"/><LineBreak/><Run/><LineBreak/><Run Text="from the Teleport gate plaza, you are looking directly away from the Clock tower, to the North. turn to the left, and go the way you are looking, there is a diagonal path to your right hand side after you cross the lip of the clock towers surrounding towers."/><LineBreak/><Run Text="follow this main path, and it will take you to a very large building, this is the Library."/><LineBreak/><Run Text="once in the library, you can select what class you are, and this allows you to be given your first weapon(s)"/><LineBreak/><Run Text="this is the first quest that players must take (see quest AA-001 for more information)"/><LineBreak/><Run Text="once completing this quest, you will be directed to your inventory menu, which will have a section called &quot;Quests&quot;"/><LineBreak/><Run Text="this will update whenever you chose to do, or a tasked with a quest, and will update every time you complete one."/><LineBreak/><Run Text="you are then sent on optional quests that direct you around the town, this is a good idea to do, as it will give you exp that you will need later on in order to beat the boss. and progress to the next floor."/><LineBreak/><Run/><LineBreak/><Run Text="having completed the following quests (AA-001, AA-002, AA-003, AA-004, AA-005, AA-006, AA-007, AA-008, AA-009) you will need to leave the town in order to progress, but you are more than welcome to continue exploring the town, as it is very large. and there are lots of things hidden in there that you might find helpful, like weapons and data notes that will help you later on."/><LineBreak/><Run/><LineBreak/><Run Text="it is also advised that you visit the library often, specifically its Achieves, as the Library Archives give details on quests and Lore that will help you throughout the entire Server."/></TextBlock>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Part 2" Margin="7,-2,-11,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601"><Run Text="From the Clock Towers teleport gate face north, and go forwards, this will lead you the mansion on the Town of Beginnings Lake. go around the lake and continue on as if you were walking in a straight line."/><LineBreak/><Run Text="from here, you will see that there is a massive medieval gate. go through it. you are now leaving the Town of beginnings and entering the plains. from here, the best place to go to grind, is one of 3 places only one of which is in the plains."/><LineBreak/><Run/><LineBreak/><Run Text="1. The Mines, which are located at co-ordinates _ _ _ _, _ _ _, _ _ __."/><LineBreak/><Run Text="if you are a blacksmith type, then you can mine here, and this will also allow you to get the ores and minerals required for you to build more weapons, which will allow you to make your income easier."/><LineBreak/><Run Text="there are very low level mobs (&quot;Dire Wolves&quot; and &quot;Frenzy Boars&quot;. both of which are set at level 1) which shouldn't be a problem if you can battle them enough."/><LineBreak/><Run Text="once you are at the mine hut, you will realize that there is a ravine that is under there. it is expansive, but hidden within it, there are 6 mines"/><LineBreak/><Run Text="all of which have a Mini Boss hidden in them."/><LineBreak/><Run Text="around these Mini Boss's, there are mobs that can be killed and will give off exp to help you level up "/><LineBreak/><Run/><LineBreak/><Run Text="from here, you can progress further, finishing both Quests: AA-010 and AA-011. after you complete them, return to The Town of beginnings front gate."/><LineBreak/><Run Text="from there, face north, and go forwards, you will eventually come across the entrance to the forest,"/><LineBreak/><Run Text="from here, go to the co-ordinates _ _ _ _, _ _ _, _ _ _ _"/><LineBreak/><Run Text="this is Tolbana"/><LineBreak/><Run/></TextBlock>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Part 3" Margin="10,-2,-14,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="323" Width="601"><Run Text="From the front gate in Tolbana, there is lots to do, but you will mostly want to go into the Markets at the center of the town, here you can by items, as well as weapons and consumables."/><LineBreak/><Run Text="there is an NPC blacksmith in the markets that can repair your weapons (mechanic still in testing)"/><LineBreak/><Run Text="from here, you will want to leave the markets, there are 8 quests that can be started in Tolbana."/><LineBreak/><Run Text="once leaving Tolbana, head outside of Tolbana, and head to the west of the floor,"/><LineBreak/><Run Text="you will come across a hell biome surrounded by obsidian spikes, the enter this structure, known as the &quot;Citadel&quot;,"/><LineBreak/><Run Text="go the the center of the northern side of the spikes,"/><LineBreak/><Run Text="face north, and walk forwards for about 50 blocks, there will be a cave to your right, go down this cave, and follow it down, you will come to an offshoot, ignore it, you will then come to a fork in the cave, go to your left, and follow that cave, that is the entrance to the Citadel."/><LineBreak/><Run Text="when you are in there, you can start a quest that will allow you to enter the nether..."/><LineBreak/><Run Text="in BETA this function and quest are both disabled, however the citadel can still be accessed, but there are only mobs in there that you can kill for exp."/><LineBreak/><Run/><LineBreak/><Run Text="inside the forest there are mobs that spawn at all times, and there are numerous sub buildings that are scattered throughout the forest which can be looted for items and weapons"/><LineBreak/><Run Text="there are also scattered chests that are hidden throughout the forest that can be looted for items and weapons."/><LineBreak/><Run/><LineBreak/><Run Text="keep heading the the west and you will come across a lake, which brings us to the next section."/></TextBlock>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Part 4" Margin="13,-2,-17,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="323" Width="601"><Run Text="When you continue heading to the west, you will come across a lake, this lake contains 4 quests, one of which is required to get to floor 5. which will be covered at the end of this Chapter."/><LineBreak/><Run/><LineBreak/><Run Text="inside the lake there is a water Temple, however when you enter the water temple you are hit with blindness."/><LineBreak/><Run Text="this makes navigating the 3 dimensional labyrinth down there extremely difficult, especially as you have to navigate through the water temple, which is fully submerged in water, which means that you have to navigate it whilst dealing with suffocation from lack of air."/><LineBreak/><Run Text="there are air pockets in the roof of the water temple's chambers, but the blindness is an issue, so dont bother grinding there."/><LineBreak/><Run/><LineBreak/><Run Text="continue going passed the lake, and heading north, you will come across a massive wall of stone, these are the mountains, and they are un-climbable, but if you follow them enough, there is an opening between the mountains,"/><LineBreak/><Run Text="and this brings us to the next section."/></TextBlock>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Part 5" Margin="16,-2,-20,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="323" Width="601"><Run Text="Once inside the labyrinth biome, you will immediately realize that everything is different than the rest of the map, its much more open, and much more complex."/><LineBreak/><Run/><LineBreak/><Run Text="there are 5 entrances to this maze of mountains, and only one will lead to the actual labyrinth, which is the _ one"/><LineBreak/><Run Text="located at the co-ordinates _ _ _ _, _ _ _, _ _ _ _. however, if you enter the last one to right, you will come across a town, called Castellum, this town has 2 quests that can be started in it, but these quests are not required to complete the floor, but you can do them for your exp."/><LineBreak/><Run/><LineBreak/><Run Text="once you have completed what you wish to complete here, go to the above co-ordinates, and enter that entrance"/><LineBreak/><Run Text="from here, go through the mountain maze, and this will lead you to the labyrinth, once you enter the labyrinth, your job is to get through the labyrinth without dying, reach the top, then beat the boss, once you beat the boss, you will  be able to use the items which are teleport crystals,"/><LineBreak/><Run Text="the pure versions of these are used to teleport between floors, and when you complete the boss battle, you unlock the ability to teleport between floors, but you will be teleported to the teleport gate plaza of the floor destination that you choose."/><LineBreak/><Run Text="you can only teleport to floors that are +1 of the amount of Labyrinth bosses you have beaten. (defeating a laybrinth boss multiple times does not increase this number."/><LineBreak/><Run/></TextBlock>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Chapter 1: The Start" Margin="1,-2,-5,-1" IsEnabled="False">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="345" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="Overview of this Chapter" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601" Text="This Chapter will cover the tutorial level and the town of beginnings."/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Opening" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="313" Width="601"><Run Text="*as a player logs into Aincrad for the first time, the opening credits will roll, and allow the player to see who cr"/><Run Text="eated the server, this is going to be an edit of the original, and will be incorporated into the mod and thus launcher."/><LineBreak/><Run Text="it will vary depending on the language setting, however to start off, all of them will play the Japanese version.*"/><LineBreak/><Run/><LineBreak/><Run Text="*as player logs in for first time, they are teleported to a tutorial world, this world is referenced as &quot;Tutorial_World&quot;*"/><LineBreak/><LineBreak/><Run Text="Player is introduced to the Ai that is running as help (in truth this &quot;AI&quot; is just the server &quot;pretending&quot; to be an AI as it wont be sentient, not have any additional programming set to it, it will only ask questions, and give results based on the answers it is given"/><LineBreak/><Run/><LineBreak/><Run Text="Player is then introduced to the controls, what is different from the normal game, and how to controls work"/><LineBreak/><Run/><LineBreak/><Run Text="player is then taught how currency works and how to buy things, they are given money to do this and MUST spend it to progress"/><LineBreak/><Run Text="once the player walks through the tutorial world, they can step on a pad at the end of the corridor, and this will teleport them to the first floor, specifically, The Town of Beginnings Clock tower teleport gate plaza, which is located in the center of the Clock Tower Courtyard to the north and directly in front of the clock tower."/><LineBreak/><LineBreak/><LineBreak/><Run/><LineBreak/><Run Text=""/></TextBlock>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Part 1" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601" Text="You should now be standing at the teleport gate plaza for floor one from here, you can meet Kirito and Asuna "/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Part 2" Margin="8,-2,-12,-1" HorizontalAlignment="Left" Width="49">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Chapter 2: The Plains" Margin="4,-2,-8,-1" IsEnabled="False">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="Overview of this Chapter" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601" Text="this Chapter will cover all the things covered in the plains, including the floor center quest, The Mines, and a lot of other things within the plains biome"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Opening" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Part 1" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="333" Width="601"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Chapter 3: The Forest" Margin="-2,-2,-2,-1" IsEnabled="False">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="Overview of this Chapter" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Opening" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Part 1" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add Text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Chapter 4: The Lake" Margin="2,-2,-6,-1" IsEnabled="False">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="Overview of this Chapter" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Opening" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Part 1" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add Text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Chapter 5: The Mountains" Margin="2,-2,-3,-1" IsEnabled="False">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="Overview of this Chapter" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Opening" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Part 1" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add Text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Chapter 6: The Labyrinth" Margin="2,-2,-4,-1" IsEnabled="False">
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="611">
+                                    <TabItem Header="Overview of this Chapter" Margin="-2,-2,-2,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" Height="333" TextWrapping="Wrap" VerticalAlignment="Top" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="opening" Margin="1,-2,-5,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Part 1" Margin="4,-2,-8,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add Text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Part 2" Margin="7,-2,-11,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Part 3" Margin="10,-2,-14,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="The end of book 1" Margin="13,-2,-17,-1">
+                                        <Grid Background="#FFE5E5E5">
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="601" Text="Add text here" Background="Red"/>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                    <Canvas x:Name="Walkthrough_popup" HorizontalAlignment="Left" Height="397" VerticalAlignment="Top" Width="622" Background="#FF838383">
+                        <Button x:Name="loginButton" VerticalAlignment="Bottom" Content="Unlock" Width="150" Height="30" FontSize="16" Canvas.Left="222" Canvas.Top="319" Click="loginButton_Click_1"/>
+                        <Label x:Name="textbox" Content="This Walkthrough is Designed to explain how to get you from the first time you log on, till the end of the &#xD;&#xA;game, however, each Floor has a selection of chapters. these Chapters correlate, and so there will never be &#xD;&#xA;two of the Chapter.&#xA;&#xA;Floor 1's Walkthrough is unique as it Also contains another tab called BETA Story mode.&#xA;this is Unique as this is a separate chapter that runs through what the story line of the BETA players have.&#xA;The Beta story line and the Actual story line are not the same.&#xD;&#xA;the Beta story line tab contains ALL of the floor 1 story condensed into one tab control, where as the actual &#xD;&#xA;story line is a lot more explained&#xD;&#xA;&#xA;&#xA;they differ by the events that occur within them, for example, the boss battle, or Kayaba's speech&#xA;just to name a few" Height="235" Canvas.Left="10" Canvas.Top="59" Width="602"/>
+                    </Canvas>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Layout and floor plan" Margin="0,172,-1,-199" IsEnabled="False">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+        <Button Content="Floor Progression" HorizontalAlignment="Left" Height="39" Margin="579,21,0,0" VerticalAlignment="Top" Width="202" Click="Button_Click_2"/>
+        <Button Content="Map" HorizontalAlignment="Left" Height="39" Margin="21,21,0,0" VerticalAlignment="Top" Width="202" Click="Map_Floor1"/>
+    </Grid>
+</UserControl>

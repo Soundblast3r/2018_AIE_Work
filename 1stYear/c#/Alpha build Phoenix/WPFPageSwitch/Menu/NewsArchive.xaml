@@ -1,0 +1,31 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="ThePhoenix.NewsArchive"
+	d:DesignWidth="640" d:DesignHeight="480" Width="800" Height="600">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush ImageSource="Images\photos\2Q==.jpg"/>
+        </Grid.Background>
+        <Rectangle Fill="#B9515151" Margin="43,452,16,44" Stroke="Black" RadiusY="45.543" RadiusX="45.543" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.553"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.878"/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Button Height="25" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="100" Content="&lt; Back" Click="Button_Click_2"/>
+        <Popup/>
+        <DatePicker HorizontalAlignment="Left" Height="26" Margin="83,473,0,0" VerticalAlignment="Top" Width="395"/>
+        <CheckBox x:Name="checkBox" Content="This is the copy of the newsletter that I want." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="132,515,0,0" Width="257" Foreground="White"/>
+        <Button x:Name="button" Content="Download This Newsletter" HorizontalAlignment="Left" Height="65" Margin="555,473,0,0" VerticalAlignment="Top" Width="197"/>
+        <DocumentViewer x:Name="documentViewer" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Height="428" Width="780"/>
+    </Grid>
+</UserControl>

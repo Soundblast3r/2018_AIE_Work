@@ -1,0 +1,31 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d"
+	x:Class="ThePhoenix.Firstpage" d:DesignHeight="600" Width="800">
+    <UserControl.Resources>
+
+        <Storyboard x:Key="loginMouseEnter"/>
+        <Storyboard x:Key="registerMouseEnter"/>
+        <Storyboard x:Key="loginMouseLeave"/>
+        <Storyboard x:Key="registerMouseLeave"/>
+    </UserControl.Resources>
+    <Grid x:Name="FirstpageLayoutRoot" Width="800">
+       
+           <Grid.Background>
+           <ImageBrush ImageSource="Images\photos\2Q==.jpg"/>
+        </Grid.Background>
+        
+        <Button x:Name="PhoenixMainPageButton" HorizontalAlignment="Left" Margin="354,0,0,146.5" VerticalAlignment="Bottom" Width="422" Content="Accept" Height="91.813" FontSize="21.333" Click="PhoenixMainPageButton_Click"/>
+        <Image x:Name="Background_jpg" Margin="354,34.5,24,298.5" Source="Images\photos\Background.jpg" Stretch="Fill">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="Images\photos\Background.jpg"/>
+            </Image.OpacityMask> 
+        </Image>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="50,34.5,10,34" TextWrapping="Wrap" Width="273" Foreground="Black" Background="White" FontFamily="Times New Roman" Padding="5,0" TextAlignment="Justify"><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run Text="This Program is to be used "/><Run Text="ONLY by Phoenix Quill Unit Members, and edited ONLY via the updater (and its version distributed to the "/><Run Text="Administrators"/><Run Text=")"/><LineBreak/><Run/><LineBreak/><Run Text="T"/><Run Text="his program, and all its components were built by Phoenix Quill, specifically its Programming team, "/><LineBreak/><Run Text="Known as Alpha."/><LineBreak/><Run/><LineBreak/><Run Text="If you have any questions, or can not remember your log in, please contact your unit leader, who will in"/><Run Text=" "/><Run Text="turn refer it to one of the programming team, who can then help you."/></TextBlock>
+        <Button x:Name="PhoenixMainPageButton_Copy" HorizontalAlignment="Left" Margin="354,0,0,34" VerticalAlignment="Bottom" Width="422" Content="Decline" Height="91.813" FontSize="21.333" Click="DeclineButton_Click"/>
+    </Grid>
+    
+</UserControl>

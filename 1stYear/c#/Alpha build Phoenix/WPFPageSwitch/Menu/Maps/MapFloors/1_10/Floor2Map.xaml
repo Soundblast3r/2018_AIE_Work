@@ -1,0 +1,13 @@
+﻿<Window x:Class="ThePhoenix.Menu.Maps.Floor2Map"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThePhoenix.Menu.Maps"
+        mc:Ignorable="d"
+        Title="Floor2Map" Height="531.333" Width="900">
+    <Grid>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="501" VerticalAlignment="Top" Width="892" Source="../../MapImages/1_10/Floor_2.png"/>
+
+    </Grid>
+</Window>

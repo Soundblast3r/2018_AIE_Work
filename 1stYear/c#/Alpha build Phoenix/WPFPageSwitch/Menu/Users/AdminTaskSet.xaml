@@ -1,0 +1,179 @@
+﻿<Window x:Class="ThePhoenix.Menu.Users.AdminTaskSet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThePhoenix.Menu.Users"
+        mc:Ignorable="d"
+        Title="Set Tasks" Height="360" Width="800">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="..\Images\photos\2Q==.jpg"/>
+        </Grid.Background>
+        <Canvas HorizontalAlignment="Left" Height="309" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Background="#FF686868">
+            <Canvas Height="26" Width="238" Canvas.Left="274" Canvas.Top="10" Background="#FFF1F1F1">
+                <Label x:Name="MemberSelection" Content="Select Member:"/>
+                <ComboBox x:Name="comboBox_Copy" Canvas.Left="93" Canvas.Top="2" Width="143" SelectedIndex="0">
+                    <ComboBoxItem Content="-Select a Member-" IsEnabled="False"/>
+                    <ComboBoxItem Content="SoundBlast3r" />
+                    <ComboBoxItem Content="CubicCrazy"/>
+                    <ComboBoxItem Content="TheWither_Effect"/>
+                </ComboBox>
+            </Canvas>
+            <Canvas Height="26" Canvas.Left="10" Canvas.Top="10" Width="238" Background="#FFF1F1F1">
+                <Label x:Name="label" Content="Select Team:"/>
+                <ComboBox x:Name="TeamSelection" Canvas.Left="93" Canvas.Top="2" Width="143" SelectedIndex="0">
+                    <ComboBoxItem Content="-Select a Team-" IsEnabled="False"/>
+                    <ComboBoxItem Content="Origins" />
+                    <ComboBoxItem Content="M1"/>
+                    <ComboBoxItem Content="Beaters"/>
+                </ComboBox>
+            </Canvas>
+            <Label x:Name="UserIdentifyer" Content="Setting Tasks as:" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="524" Canvas.Top="10"/>
+            <Label x:Name="NameOfUser" Content="User" Canvas.Left="620" Width="142" Canvas.Top="10"/>
+            <Canvas Height="248" Canvas.Left="10" Canvas.Top="48" Width="752" Background="#FFC5C5C5">
+                <Label x:Name="NameOfUser_Copy3" Content="Due Date:" Canvas.Left="493" Width="65" Canvas.Top="41"/>
+                <Label x:Name="NameOfUser_Copy4" Content="Admin notes (Please Note that the Admin Notes Will Not be Visible to the User)" Canvas.Left="10" Width="431" Canvas.Top="103"/>
+                <Label x:Name="NameOfUser_Copy2" Content="Location:" Canvas.Left="10" Width="68" Canvas.Top="72"/>
+                <Label x:Name="NameOfUser_Copy1" Content="Floor Number:" Canvas.Left="232" Width="89" Canvas.Top="41"/>
+                <TextBox x:Name="textBox" Height="23" Canvas.Left="78" TextWrapping="Wrap" Text="Please Name This Task" Width="363" Canvas.Top="10"/>
+                <Label x:Name="NameOfUser_Copy5" Content="Floor Access:" Canvas.Left="7" Width="89" Canvas.Top="41"/>
+                <ComboBox x:Name="FloorAccess" Canvas.Left="96" Canvas.Top="45" Width="120">
+                    <ComboBoxItem x:Name="StandardFloors" Content="Standard Floors" />
+                    <ComboBoxItem x:Name="HiddenFloors" Content="Hidden Floors" />
+                    <ComboBoxItem x:Name="AdminFloors" Content="Admin Floors" />
+                </ComboBox>
+                <Label x:Name="NameOfUser_Copy" Content="Task name:" Width="71" Canvas.Top="7" Canvas.Left="7"/>
+                <ComboBox x:Name="SelectStandardFloors" Canvas.Left="321" Canvas.Top="45" Width="120" MaxDropDownHeight="200">
+                    <!-- Floors 1 -> 10 -->
+                    <ComboBoxItem Content="Floor 001" />
+                    <ComboBoxItem Content="Floor 002" />
+                    <ComboBoxItem Content="Floor 003" />
+                    <ComboBoxItem Content="Floor 004" />
+                    <ComboBoxItem Content="Floor 005" />
+                    <ComboBoxItem Content="Floor 006" />
+                    <ComboBoxItem Content="Floor 007" />
+                    <ComboBoxItem Content="Floor 008" />
+                    <ComboBoxItem Content="Floor 009" />
+                    <ComboBoxItem Content="Floor 010" />
+
+                    <!-- Floors 11 -> 20 -->
+                    <ComboBoxItem Content="Floor 011" />
+                    <ComboBoxItem Content="Floor 012" />
+                    <ComboBoxItem Content="Floor 013" />
+                    <ComboBoxItem Content="Floor 014" />
+                    <ComboBoxItem Content="Floor 015" />
+                    <ComboBoxItem Content="Floor 016" />
+                    <ComboBoxItem Content="Floor 017" />
+                    <ComboBoxItem Content="Floor 018" />
+                    <ComboBoxItem Content="Floor 019" />
+                    <ComboBoxItem Content="Floor 020" />
+
+                    <!-- Floors 21 -> 30 -->
+                    <ComboBoxItem Content="Floor 021" />
+                    <ComboBoxItem Content="Floor 022" />
+                    <ComboBoxItem Content="Floor 023" />
+                    <ComboBoxItem Content="Floor 024" />
+                    <ComboBoxItem Content="Floor 025" />
+                    <ComboBoxItem Content="Floor 026" />
+                    <ComboBoxItem Content="Floor 027" />
+                    <ComboBoxItem Content="Floor 028" />
+                    <ComboBoxItem Content="Floor 029" />
+                    <ComboBoxItem Content="Floor 030" />
+
+                    <!-- Floors 31 -> 40 -->
+                    <ComboBoxItem Content="Floor 031" />
+                    <ComboBoxItem Content="Floor 032" />
+                    <ComboBoxItem Content="Floor 033" />
+                    <ComboBoxItem Content="Floor 034" />
+                    <ComboBoxItem Content="Floor 035" />
+                    <ComboBoxItem Content="Floor 036" />
+                    <ComboBoxItem Content="Floor 037" />
+                    <ComboBoxItem Content="Floor 038" />
+                    <ComboBoxItem Content="Floor 039" />
+                    <ComboBoxItem Content="Floor 040" />
+
+                    <!-- Floors 41 -> 50 -->
+                    <ComboBoxItem Content="Floor 041" />
+                    <ComboBoxItem Content="Floor 042" />
+                    <ComboBoxItem Content="Floor 043" />
+                    <ComboBoxItem Content="Floor 044" />
+                    <ComboBoxItem Content="Floor 045" />
+                    <ComboBoxItem Content="Floor 046" />
+                    <ComboBoxItem Content="Floor 047" />
+                    <ComboBoxItem Content="Floor 048" />
+                    <ComboBoxItem Content="Floor 049" />
+                    <ComboBoxItem Content="Floor 050" />
+
+                    <!-- Floors 51 -> 60 -->
+                    <ComboBoxItem Content="Floor 051" />
+                    <ComboBoxItem Content="Floor 052" />
+                    <ComboBoxItem Content="Floor 053" />
+                    <ComboBoxItem Content="Floor 054" />
+                    <ComboBoxItem Content="Floor 055" />
+                    <ComboBoxItem Content="Floor 056" />
+                    <ComboBoxItem Content="Floor 057" />
+                    <ComboBoxItem Content="Floor 058" />
+                    <ComboBoxItem Content="Floor 059" />
+                    <ComboBoxItem Content="Floor 060" />
+
+                    <!-- Floors 61 -> 70 -->
+                    <ComboBoxItem Content="Floor 061" />
+                    <ComboBoxItem Content="Floor 062" />
+                    <ComboBoxItem Content="Floor 063" />
+                    <ComboBoxItem Content="Floor 064" />
+                    <ComboBoxItem Content="Floor 065" />
+                    <ComboBoxItem Content="Floor 066" />
+                    <ComboBoxItem Content="Floor 067" />
+                    <ComboBoxItem Content="Floor 068" />
+                    <ComboBoxItem Content="Floor 069" />
+                    <ComboBoxItem Content="Floor 070" />
+
+                    <!-- Floors 71 -> 80 -->
+                    <ComboBoxItem Content="Floor 071" />
+                    <ComboBoxItem Content="Floor 072" />
+                    <ComboBoxItem Content="Floor 073" />
+                    <ComboBoxItem Content="Floor 074" />
+                    <ComboBoxItem Content="Floor 075" />
+                    <ComboBoxItem Content="Floor 076" />
+                    <ComboBoxItem Content="Floor 077" />
+                    <ComboBoxItem Content="Floor 078" />
+                    <ComboBoxItem Content="Floor 079" />
+                    <ComboBoxItem Content="Floor 080" />
+
+                    <!-- Floors 81 -> 90 -->
+                    <ComboBoxItem Content="Floor 081" />
+                    <ComboBoxItem Content="Floor 082" />
+                    <ComboBoxItem Content="Floor 083" />
+                    <ComboBoxItem Content="Floor 084" />
+                    <ComboBoxItem Content="Floor 085" />
+                    <ComboBoxItem Content="Floor 086" />
+                    <ComboBoxItem Content="Floor 087" />
+                    <ComboBoxItem Content="Floor 088" />
+                    <ComboBoxItem Content="Floor 089" />
+                    <ComboBoxItem Content="Floor 090" />
+
+                    <!-- Floors 90 -> 100 -->
+                    <ComboBoxItem Content="Floor 091" />
+                    <ComboBoxItem Content="Floor 092" />
+                    <ComboBoxItem Content="Floor 093" />
+                    <ComboBoxItem Content="Floor 094" />
+                    <ComboBoxItem Content="Floor 095" />
+                    <ComboBoxItem Content="Floor 096" />
+                    <ComboBoxItem Content="Floor 097" />
+                    <ComboBoxItem Content="Floor 098" />
+                    <ComboBoxItem Content="Floor 099" />
+                    <ComboBoxItem Content="Floor 100" />
+                </ComboBox>
+                <Label x:Name="FloorCodeNameLabel" Content="Floor CodeName: " Canvas.Left="493" Width="102" Canvas.Top="10"/>
+                <Label x:Name="FloorCodeName" Content="Codename" Canvas.Left="600" Width="142" Canvas.Top="10"/>
+                <TextBox x:Name="LocationTextBox" Height="23" Canvas.Left="68" TextWrapping="Wrap" Text="Please Add a location" Width="373" Canvas.Top="73"/>
+                <TextBox x:Name="AdminNotesTextBox" Height="111" Canvas.Left="10" TextWrapping="Wrap" Text="TextBox" Width="732" Canvas.Top="129"/>
+                <DatePicker Canvas.Left="558" Canvas.Top="42" Width="135"/>
+                <Button x:Name="button" Content="Show Selected user's excel workbook." Canvas.Left="493" Canvas.Top="72" Width="249" Height="24" Click="button_Click"/>
+                <Button x:Name="button_Copy" Content="Save and apply task" Canvas.Left="493" Canvas.Top="103" Width="249" Height="24"/>
+            </Canvas>
+        </Canvas>
+    </Grid>
+</Window>
