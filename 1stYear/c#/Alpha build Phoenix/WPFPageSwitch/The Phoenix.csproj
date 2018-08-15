@@ -1,0 +1,1111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{66F0DBCF-9C32-4B01-B6D1-71850B7A7A95}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ThePhoenix</RootNamespace>
+    <AssemblyName>The Phoenix</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <ExpressionBlendVersion>3.0.1927.0</ExpressionBlendVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\s166282\Desktop\The Phoenix\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>true</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>en-AU</TargetCulture>
+    <ProductName>The Phoenix</ProductName>
+    <PublisherName>Phoenix Quill Programming Team</PublisherName>
+    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Menu\Images\App Properties\PhoenixQuill.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject>ThePhoenix.App</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>Internet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0054F85A4C5BACD73D4B35FD06F995FE2DFA4987</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>The Phoenix_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Menu\EditControl.cs" />
+    <Compile Include="Menu\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\1-10\Floor1.xaml.cs">
+      <DependentUpon>Floor1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\1-10\Floor2.xaml.cs">
+      <DependentUpon>Floor2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\1-10\Floor3.xaml.cs">
+      <DependentUpon>Floor3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\1-10\Floor4.xaml.cs">
+      <DependentUpon>Floor4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\11-20\Floor15.xaml.cs">
+      <DependentUpon>Floor15.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\1-10\Floor5.xaml.cs">
+      <DependentUpon>Floor5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\1-10\Floor6.xaml.cs">
+      <DependentUpon>Floor6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\1-10\Floor7.xaml.cs">
+      <DependentUpon>Floor7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\1-10\Floor8.xaml.cs">
+      <DependentUpon>Floor8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\1-10\Floor9.xaml.cs">
+      <DependentUpon>Floor9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\1-10\Floor10.xaml.cs">
+      <DependentUpon>Floor10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\11-20\Floor11.xaml.cs">
+      <DependentUpon>Floor11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\11-20\Floor20.xaml.cs">
+      <DependentUpon>Floor20.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\11-20\Floor12.xaml.cs">
+      <DependentUpon>Floor12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\11-20\Floor13.xaml.cs">
+      <DependentUpon>Floor13.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\11-20\Floor14.xaml.cs">
+      <DependentUpon>Floor14.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\11-20\Floor16.xaml.cs">
+      <DependentUpon>Floor16.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\11-20\Floor17.xaml.cs">
+      <DependentUpon>Floor17.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\11-20\Floor18.xaml.cs">
+      <DependentUpon>Floor18.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\11-20\Floor19.xaml.cs">
+      <DependentUpon>Floor19.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\21-30\Floor25.xaml.cs">
+      <DependentUpon>Floor25.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\21-30\Floor21.xaml.cs">
+      <DependentUpon>Floor21.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\21-30\Floor30.xaml.cs">
+      <DependentUpon>Floor30.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\21-30\Floor22.xaml.cs">
+      <DependentUpon>Floor22.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\21-30\Floor23.xaml.cs">
+      <DependentUpon>Floor23.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\21-30\Floor24.xaml.cs">
+      <DependentUpon>Floor24.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\21-30\Floor26.xaml.cs">
+      <DependentUpon>Floor26.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\21-30\Floor27.xaml.cs">
+      <DependentUpon>Floor27.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\21-30\Floor28.xaml.cs">
+      <DependentUpon>Floor28.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\21-30\Floor29.xaml.cs">
+      <DependentUpon>Floor29.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\31-40\Floor35.xaml.cs">
+      <DependentUpon>Floor35.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\31-40\Floor31.xaml.cs">
+      <DependentUpon>Floor31.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\31-40\Floor40.xaml.cs">
+      <DependentUpon>Floor40.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\31-40\Floor32.xaml.cs">
+      <DependentUpon>Floor32.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\31-40\Floor33.xaml.cs">
+      <DependentUpon>Floor33.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\31-40\Floor34.xaml.cs">
+      <DependentUpon>Floor34.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\31-40\Floor36.xaml.cs">
+      <DependentUpon>Floor36.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\31-40\Floor37.xaml.cs">
+      <DependentUpon>Floor37.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\31-40\Floor38.xaml.cs">
+      <DependentUpon>Floor38.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\31-40\Floor39.xaml.cs">
+      <DependentUpon>Floor39.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\41-50\Floor41.xaml.cs">
+      <DependentUpon>Floor41.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\41-50\Floor50.xaml.cs">
+      <DependentUpon>Floor50.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\41-50\Floor42.xaml.cs">
+      <DependentUpon>Floor42.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\41-50\Floor43.xaml.cs">
+      <DependentUpon>Floor43.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\41-50\Floor45.xaml.cs">
+      <DependentUpon>Floor45.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\41-50\Floor44.xaml.cs">
+      <DependentUpon>Floor44.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\41-50\Floor46.xaml.cs">
+      <DependentUpon>Floor46.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\41-50\Floor47.xaml.cs">
+      <DependentUpon>Floor47.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\41-50\Floor48.xaml.cs">
+      <DependentUpon>Floor48.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\41-50\Floor49.xaml.cs">
+      <DependentUpon>Floor49.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\51-60\Floor51.xaml.cs">
+      <DependentUpon>Floor51.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\51-60\Floor60.xaml.cs">
+      <DependentUpon>Floor60.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\51-60\Floor52.xaml.cs">
+      <DependentUpon>Floor52.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\51-60\Floor53.xaml.cs">
+      <DependentUpon>Floor53.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\51-60\Floor55.xaml.cs">
+      <DependentUpon>Floor55.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\51-60\Floor54.xaml.cs">
+      <DependentUpon>Floor54.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\51-60\Floor56.xaml.cs">
+      <DependentUpon>Floor56.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\51-60\Floor57.xaml.cs">
+      <DependentUpon>Floor57.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\51-60\Floor58.xaml.cs">
+      <DependentUpon>Floor58.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\51-60\Floor59.xaml.cs">
+      <DependentUpon>Floor59.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\61-70\Floor61.xaml.cs">
+      <DependentUpon>Floor61.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\61-70\Floor70.xaml.cs">
+      <DependentUpon>Floor70.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\61-70\Floor62.xaml.cs">
+      <DependentUpon>Floor62.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\61-70\Floor63.xaml.cs">
+      <DependentUpon>Floor63.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\61-70\Floor65.xaml.cs">
+      <DependentUpon>Floor65.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\61-70\Floor64.xaml.cs">
+      <DependentUpon>Floor64.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\61-70\Floor66.xaml.cs">
+      <DependentUpon>Floor66.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\61-70\Floor67.xaml.cs">
+      <DependentUpon>Floor67.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\61-70\Floor68.xaml.cs">
+      <DependentUpon>Floor68.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\61-70\Floor69.xaml.cs">
+      <DependentUpon>Floor69.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\71-80\Floor71.xaml.cs">
+      <DependentUpon>Floor71.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\71-80\Floor75.xaml.cs">
+      <DependentUpon>Floor75.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\71-80\Floor80.xaml.cs">
+      <DependentUpon>Floor80.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\71-80\Floor72.xaml.cs">
+      <DependentUpon>Floor72.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\71-80\Floor73.xaml.cs">
+      <DependentUpon>Floor73.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\71-80\Floor74.xaml.cs">
+      <DependentUpon>Floor74.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\71-80\Floor76.xaml.cs">
+      <DependentUpon>Floor76.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\71-80\Floor77.xaml.cs">
+      <DependentUpon>Floor77.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\71-80\Floor78.xaml.cs">
+      <DependentUpon>Floor78.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\71-80\Floor79.xaml.cs">
+      <DependentUpon>Floor79.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\81-90\Floor85.xaml.cs">
+      <DependentUpon>Floor85.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\81-90\Floor81.xaml.cs">
+      <DependentUpon>Floor81.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\81-90\Floor90.xaml.cs">
+      <DependentUpon>Floor90.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\81-90\Floor82.xaml.cs">
+      <DependentUpon>Floor82.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\81-90\Floor83.xaml.cs">
+      <DependentUpon>Floor83.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\81-90\Floor84.xaml.cs">
+      <DependentUpon>Floor84.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\81-90\Floor86.xaml.cs">
+      <DependentUpon>Floor86.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\81-90\Floor87.xaml.cs">
+      <DependentUpon>Floor87.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\81-90\Floor88.xaml.cs">
+      <DependentUpon>Floor88.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\81-90\Floor89.xaml.cs">
+      <DependentUpon>Floor89.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\91-100\Floor91.xaml.cs">
+      <DependentUpon>Floor91.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\91-100\Floor100.xaml.cs">
+      <DependentUpon>Floor100.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\91-100\Floor92.xaml.cs">
+      <DependentUpon>Floor92.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\91-100\Floor93.xaml.cs">
+      <DependentUpon>Floor93.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\91-100\Floor95.xaml.cs">
+      <DependentUpon>Floor95.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\91-100\Floor94.xaml.cs">
+      <DependentUpon>Floor94.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\91-100\Floor96.xaml.cs">
+      <DependentUpon>Floor96.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\91-100\Floor97.xaml.cs">
+      <DependentUpon>Floor97.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\91-100\Floor98.xaml.cs">
+      <DependentUpon>Floor98.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\91-100\Floor99.xaml.cs">
+      <DependentUpon>Floor99.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\Hidden Floors\Floor0.xaml.cs">
+      <DependentUpon>Floor0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Floors\Hidden Floors\Floor 101.xaml.cs">
+      <DependentUpon>Floor 101.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Information\1-10\Floor4Info.xaml.cs">
+      <DependentUpon>Floor4Info.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Information\1-10\Floor2Info.xaml.cs">
+      <DependentUpon>Floor2Info.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Information\1-10\Floor1Info.xaml.cs">
+      <DependentUpon>Floor1Info.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Maps\MapFloors\1_10\Floor4Map.xaml.cs">
+      <DependentUpon>Floor4Map.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Maps\MapFloors\1_10\Floor1Map.xaml.cs">
+      <DependentUpon>Floor1Map.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Maps\MapFloors\1_10\Floor2Map.xaml.cs">
+      <DependentUpon>Floor2Map.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Projects.xaml.cs">
+      <DependentUpon>Projects.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\NewsArchive.xaml.cs">
+      <DependentUpon>NewsArchive.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\NewsletterSelection.xaml.cs">
+      <DependentUpon>NewsletterSelection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Users\Pyro.xaml.cs">
+      <DependentUpon>Pyro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Users\Lorigami.xaml.cs">
+      <DependentUpon>Lorigami.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Users\Sketch.xaml.cs">
+      <DependentUpon>Sketch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Users\CubicCrazy.xaml.cs">
+      <DependentUpon>CubicCrazy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Users\SoundBlast3r.xaml.cs">
+      <DependentUpon>SoundBlast3r.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Users\AdminTaskSet.xaml.cs">
+      <DependentUpon>AdminTaskSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User.xaml.cs">
+      <DependentUpon>User.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Menu\Floors\1-10\Floor1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\1-10\Floor2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\1-10\Floor3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\1-10\Floor4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\11-20\Floor15.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\1-10\Floor5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\1-10\Floor6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\1-10\Floor7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\1-10\Floor8.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\1-10\Floor9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\1-10\Floor10.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\11-20\Floor11.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\11-20\Floor20.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\11-20\Floor12.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\11-20\Floor13.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\11-20\Floor14.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\11-20\Floor16.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\11-20\Floor17.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\11-20\Floor18.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\11-20\Floor19.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\21-30\Floor25.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\21-30\Floor21.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\21-30\Floor30.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\21-30\Floor22.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\21-30\Floor23.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\21-30\Floor24.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\21-30\Floor26.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\21-30\Floor27.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\21-30\Floor28.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\21-30\Floor29.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\31-40\Floor35.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\31-40\Floor31.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\31-40\Floor40.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\31-40\Floor32.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\31-40\Floor33.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\31-40\Floor34.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\31-40\Floor36.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\31-40\Floor37.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\31-40\Floor38.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\31-40\Floor39.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\41-50\Floor41.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\41-50\Floor50.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\41-50\Floor42.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\41-50\Floor43.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\41-50\Floor45.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\41-50\Floor44.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\41-50\Floor46.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\41-50\Floor47.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\41-50\Floor48.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\41-50\Floor49.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\51-60\Floor51.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\51-60\Floor60.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\51-60\Floor52.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\51-60\Floor53.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\51-60\Floor55.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\51-60\Floor54.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\51-60\Floor56.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\51-60\Floor57.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\51-60\Floor58.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\51-60\Floor59.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\61-70\Floor61.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\61-70\Floor70.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\61-70\Floor62.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\61-70\Floor63.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\61-70\Floor65.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\61-70\Floor64.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\61-70\Floor66.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\61-70\Floor67.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\61-70\Floor68.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\61-70\Floor69.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\71-80\Floor71.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\71-80\Floor75.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\71-80\Floor80.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\71-80\Floor72.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\71-80\Floor73.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\71-80\Floor74.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\71-80\Floor76.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\71-80\Floor77.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\71-80\Floor78.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\71-80\Floor79.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\81-90\Floor85.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\81-90\Floor81.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\81-90\Floor90.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\81-90\Floor82.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\81-90\Floor83.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\81-90\Floor84.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\81-90\Floor86.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\81-90\Floor87.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\81-90\Floor88.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\81-90\Floor89.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\91-100\Floor91.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\91-100\Floor100.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\91-100\Floor92.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\91-100\Floor93.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\91-100\Floor95.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\91-100\Floor94.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\91-100\Floor96.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\91-100\Floor97.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\91-100\Floor98.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\91-100\Floor99.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\Hidden Floors\Floor0.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Floors\Hidden Floors\Floor 101.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Information\1-10\Floor4Info.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Information\1-10\Floor2Info.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Information\1-10\Floor1Info.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Maps\MapFloors\1_10\Floor4Map.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Maps\MapFloors\1_10\Floor1Map.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Maps\MapFloors\1_10\Floor2Map.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Menu\Projects.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\NewsArchive.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\PhoenixMainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\NewsletterSelection.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\TeamSelect.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\MapUpdate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Firstpage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Users\Pyro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Users\Lorigami.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Users\Sketch.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Users\CubicCrazy.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Users\SoundBlast3r.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\Users\AdminTaskSet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageSwitcher.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PageSwitcher.xaml.cs">
+      <DependentUpon>PageSwitcher.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="User.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ISwitchable.cs" />
+    <Compile Include="Menu\PhoenixMainPage.xaml.cs">
+      <DependentUpon>PhoenixMainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\TeamSelect.xaml.cs">
+      <DependentUpon>TeamSelect.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MapUpdate.xaml.cs">
+      <DependentUpon>MapUpdate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Firstpage.xaml.cs">
+      <DependentUpon>Firstpage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Switcher.cs" />
+    <EmbeddedResource Include="Menu\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="The Phoenix_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Properties\PhoenixQuill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Menu\Images\photos\Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Menu\Images\App Properties\PhoenixQuill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Menu\Information\11-20\" />
+    <Folder Include="Menu\Information\21-30\" />
+    <Folder Include="Menu\Information\31-40\" />
+    <Folder Include="Menu\Information\41-50\" />
+    <Folder Include="Menu\Information\51-60\" />
+    <Folder Include="Menu\Information\61-70\" />
+    <Folder Include="Menu\Information\71-80\" />
+    <Folder Include="Menu\Information\81-90\" />
+    <Folder Include="Menu\Information\91-100\" />
+    <Folder Include="Menu\Users\Excel spreadsheets\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Menu\Images\photos\2Q==.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Menu\Maps\MapImages\1_10\Floor_1.png" />
+    <Resource Include="Menu\Maps\MapImages\1_10\Floor_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Menu\Maps\MapImages\1_10\Floor_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Menu\Images\Floors\1_10\Floor_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Menu\Images\Floors\1_10\Floor_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Menu\Images\Floors\1_10\Floor_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Menu\Floors\Images\1_10\Floor_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Menu\Floors\Images\1_10\Floor_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Menu\Floors\Images\1_10\Floor_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Menu\Images\photos\logo.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
