@@ -61,10 +61,16 @@ TEST_CASE("Access hashmap", "[HashMap]")
 	std::cout << map.Count() << std::endl;
 
 	map.add("matt", 423);
-	map.add("James", 490);
+	map.add("Bob", 490);
 	map.add("karley", 630);
 
-	//REQUIRE(map.Access([name]) == [value]);
+	std::cout << "searching for matt at 423" << std::endl;
+	REQUIRE(map.Access("matt") == 423);
+
+	std::cout << "------------------------------------------------------------------------------" << std::endl;
+	std::cout << "searching for Bob at anything but 423" << std::endl;
+	REQUIRE(map.Access("Bob") != 423);
+	std::cout << "------------------------------------------------------------------------------" << std::endl;
 }
 
 ///remove

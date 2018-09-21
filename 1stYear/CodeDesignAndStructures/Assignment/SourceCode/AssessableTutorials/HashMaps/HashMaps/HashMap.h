@@ -61,7 +61,7 @@ public:
 	}
 
 
-	void Access(int key)
+	ValueType& Access(Keytype key)
 	{
 		int hash = calculate_Hash(key);
 		hash = hash % Size;
@@ -69,18 +69,17 @@ public:
 
 		for (auto it = list.begin(); it != list.end(); ++it)
 		{
-			//Search for the key
-			if (it != list.end())
+		
+			if(it != list.end() && it->key == key);
 			{
-				std::cout << list.value << endl;
-				std::;
-				break;
+				std::cout << "the specified value is: " << it->value <<std::endl;
+				std::cout << "the specified Key is: " << it->key << std::endl;
+				return it->value;
 			}
-			else
-			{
-				std::cout << "failed" << std::endl;
-			}
+			
 		}
+		//forces crash when value isnt found
+		///assert(false && "the specified value was not found");
 	}
 
 	void destroy(Keytype key)
